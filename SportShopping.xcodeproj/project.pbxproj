@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72532654183B826000212F82 /* CategoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72532653183B826000212F82 /* CategoryDetailViewController.m */; };
+		7265041F183A581E00282738 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265041E183A581D00282738 /* MenuCell.m */; };
+		72D520A2183A22E80095AC82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D520A1183A22E80095AC82 /* UIKit.framework */; };
+		72D520A4183A22E80095AC82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D520A3183A22E80095AC82 /* Foundation.framework */; };
+		72D520A6183A22E80095AC82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D520A5183A22E80095AC82 /* CoreGraphics.framework */; };
+		72D520AC183A22E80095AC82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72D520AA183A22E80095AC82 /* InfoPlist.strings */; };
+		72D520AE183A22E80095AC82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D520AD183A22E80095AC82 /* main.m */; };
+		72D520B2183A22E80095AC82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D520B1183A22E80095AC82 /* AppDelegate.m */; };
+		72D520B4183A22E80095AC82 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520B3183A22E80095AC82 /* Default.png */; };
+		72D520B6183A22E90095AC82 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520B5183A22E80095AC82 /* Default@2x.png */; };
+		72D520B8183A22E90095AC82 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520B7183A22E90095AC82 /* Default-568h@2x.png */; };
+		72D5211B183A25980095AC82 /* 商品图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520C1183A25980095AC82 /* 商品图片.png */; };
+		72D5211C183A25980095AC82 /* 商品详情-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520C2183A25980095AC82 /* 商品详情-bg.png */; };
+		72D5211D183A25980095AC82 /* nav_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520C3183A25980095AC82 /* nav_bg.png */; };
+		72D5211E183A25980095AC82 /* 商品详情1_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520C4183A25980095AC82 /* 商品详情1_03.png */; };
+		72D5211F183A25980095AC82 /* 商品详情_03 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520C5183A25980095AC82 /* 商品详情_03 (2).png */; };
+		72D52120183A25980095AC82 /* 商品详情_03 (3).png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520C6183A25980095AC82 /* 商品详情_03 (3).png */; };
+		72D52121183A25980095AC82 /* nav_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520C7183A25980095AC82 /* nav_back.png */; };
+		72D52122183A25980095AC82 /* 商品详情_03_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520C8183A25980095AC82 /* 商品详情_03_03.png */; };
+		72D52123183A25980095AC82 /* 商品详情_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520C9183A25980095AC82 /* 商品详情_06.png */; };
+		72D52124183A25980095AC82 /* 商品详情_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520CA183A25980095AC82 /* 商品详情_14.png */; };
+		72D52125183A25980095AC82 /* 商品详情_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520CB183A25980095AC82 /* 商品详情_17.png */; };
+		72D52126183A25980095AC82 /* 商品详情_21.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520CC183A25980095AC82 /* 商品详情_21.png */; };
+		72D52127183A25980095AC82 /* 商品详情_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520CD183A25980095AC82 /* 商品详情_23.png */; };
+		72D52128183A25980095AC82 /* 左滑-背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520D0183A25980095AC82 /* 左滑-背景.png */; };
+		72D52129183A25980095AC82 /* 左滑_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520D1183A25980095AC82 /* 左滑_02.png */; };
+		72D5212A183A25980095AC82 /* 左滑_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520D2183A25980095AC82 /* 左滑_03.png */; };
+		72D5212B183A25980095AC82 /* 左滑_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520D3183A25980095AC82 /* 左滑_06.png */; };
+		72D5212C183A25980095AC82 /* 左滑_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520D4183A25980095AC82 /* 左滑_09.png */; };
+		72D5212D183A25980095AC82 /* 左滑_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520D5183A25980095AC82 /* 左滑_11.png */; };
+		72D5212E183A25980095AC82 /* 左滑_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520D6183A25980095AC82 /* 左滑_13.png */; };
+		72D5212F183A25980095AC82 /* 左滑_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520D7183A25980095AC82 /* 左滑_16.png */; };
+		72D52130183A25980095AC82 /* 商品图片bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520DA183A25980095AC82 /* 商品图片bg.png */; };
+		72D52131183A25980095AC82 /* 商品图片大小.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520DB183A25980095AC82 /* 商品图片大小.png */; };
+		72D52132183A25980095AC82 /* 我喜欢的-背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520DC183A25980095AC82 /* 我喜欢的-背景.png */; };
+		72D52133183A25980095AC82 /* 我喜欢的_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520DD183A25980095AC82 /* 我喜欢的_03.png */; };
+		72D52134183A25980095AC82 /* 我喜欢的_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520DE183A25980095AC82 /* 我喜欢的_10.png */; };
+		72D52135183A25980095AC82 /* 搜索1_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520E1183A25980095AC82 /* 搜索1_07.png */; };
+		72D52136183A25980095AC82 /* 搜索2_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520E2183A25980095AC82 /* 搜索2_07.png */; };
+		72D52137183A25980095AC82 /* 搜索3_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520E3183A25980095AC82 /* 搜索3_08.png */; };
+		72D52138183A25980095AC82 /* 搜索_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520E4183A25980095AC82 /* 搜索_03.png */; };
+		72D52139183A25980095AC82 /* 搜索_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520E5183A25980095AC82 /* 搜索_10.png */; };
+		72D5213A183A25980095AC82 /* 商品大小.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520E8183A25980095AC82 /* 商品大小.png */; };
+		72D5213B183A25980095AC82 /* 商品大背景框.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520E9183A25980095AC82 /* 商品大背景框.png */; };
+		72D5213C183A25980095AC82 /* 购物车2_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520EA183A25980095AC82 /* 购物车2_02.png */; };
+		72D5213D183A25980095AC82 /* 购物车_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520EB183A25980095AC82 /* 购物车_03.png */; };
+		72D5213E183A25980095AC82 /* nav_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520EC183A25980095AC82 /* nav_menu.png */; };
+		72D5213F183A25980095AC82 /* 购物车_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520ED183A25980095AC82 /* 购物车_14.png */; };
+		72D52140183A25980095AC82 /* 购物车_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520EE183A25980095AC82 /* 购物车_18.png */; };
+		72D52141183A25980095AC82 /* 购物车_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520EF183A25980095AC82 /* 购物车_22.png */; };
+		72D52142183A25980095AC82 /* 购物车bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520F0183A25980095AC82 /* 购物车bg.png */; };
+		72D52143183A25980095AC82 /* 人气.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520F3183A25980095AC82 /* 人气.png */; };
+		72D52144183A25980095AC82 /* 价格.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520F4183A25980095AC82 /* 价格.png */; };
+		72D52145183A25980095AC82 /* 图片大小.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520F5183A25980095AC82 /* 图片大小.png */; };
+		72D52146183A25980095AC82 /* 图片背景大小.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520F6183A25980095AC82 /* 图片背景大小.png */; };
+		72D52147183A25980095AC82 /* 相关.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520F7183A25980095AC82 /* 相关.png */; };
+		72D52148183A25980095AC82 /* 运动鞋1_46.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520F8183A25980095AC82 /* 运动鞋1_46.png */; };
+		72D52149183A25980095AC82 /* 运动鞋2_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520F9183A25980095AC82 /* 运动鞋2_02.png */; };
+		72D5214A183A25980095AC82 /* 运动鞋2_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520FA183A25980095AC82 /* 运动鞋2_05.png */; };
+		72D5214B183A25980095AC82 /* 运动鞋2_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520FB183A25980095AC82 /* 运动鞋2_07.png */; };
+		72D5214C183A25980095AC82 /* 运动鞋2_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520FC183A25980095AC82 /* 运动鞋2_09.png */; };
+		72D5214D183A25980095AC82 /* 运动鞋2_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520FD183A25980095AC82 /* 运动鞋2_11.png */; };
+		72D5214E183A25980095AC82 /* 运动鞋2_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520FE183A25980095AC82 /* 运动鞋2_14.png */; };
+		72D5214F183A25980095AC82 /* 运动鞋2_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D520FF183A25980095AC82 /* 运动鞋2_17.png */; };
+		72D52150183A25980095AC82 /* 运动鞋2_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52100183A25980095AC82 /* 运动鞋2_20.png */; };
+		72D52151183A25980095AC82 /* 运动鞋2_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52101183A25980095AC82 /* 运动鞋2_23.png */; };
+		72D52152183A25980095AC82 /* 运动鞋_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52102183A25980095AC82 /* 运动鞋_03.png */; };
+		72D52153183A25980095AC82 /* 运动鞋_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52103183A25980095AC82 /* 运动鞋_06.png */; };
+		72D52154183A25980095AC82 /* 运动鞋_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52104183A25980095AC82 /* 运动鞋_11.png */; };
+		72D52155183A25980095AC82 /* 运动鞋_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52105183A25980095AC82 /* 运动鞋_13.png */; };
+		72D52156183A25980095AC82 /* 运动鞋_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52106183A25980095AC82 /* 运动鞋_15.png */; };
+		72D52157183A25980095AC82 /* 运动鞋_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52107183A25980095AC82 /* 运动鞋_17.png */; };
+		72D52158183A25980095AC82 /* 运动鞋_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52108183A25980095AC82 /* 运动鞋_20.png */; };
+		72D52159183A25980095AC82 /* 运动鞋_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52109183A25980095AC82 /* 运动鞋_23.png */; };
+		72D5215A183A25980095AC82 /* 运动鞋_26.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D5210A183A25980095AC82 /* 运动鞋_26.png */; };
+		72D5215B183A25980095AC82 /* 运动鞋_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D5210B183A25980095AC82 /* 运动鞋_29.png */; };
+		72D5215C183A25980095AC82 /* 运动鞋_42.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D5210C183A25980095AC82 /* 运动鞋_42.png */; };
+		72D5215D183A25980095AC82 /* 运动鞋_52.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D5210D183A25980095AC82 /* 运动鞋_52.png */; };
+		72D5215E183A25980095AC82 /* 销量.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D5210E183A25980095AC82 /* 销量.png */; };
+		72D5215F183A25980095AC82 /* 首页-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52111183A25980095AC82 /* 首页-bg.png */; };
+		72D52160183A25980095AC82 /* 首页1_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52112183A25980095AC82 /* 首页1_03.png */; };
+		72D52161183A25980095AC82 /* 首页1_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52113183A25980095AC82 /* 首页1_06.png */; };
+		72D52162183A25980095AC82 /* 首页1_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52114183A25980095AC82 /* 首页1_08.png */; };
+		72D52163183A25980095AC82 /* 首页1_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52115183A25980095AC82 /* 首页1_10.png */; };
+		72D52164183A25980095AC82 /* 首页_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52116183A25980095AC82 /* 首页_03.png */; };
+		72D52165183A25980095AC82 /* 首页_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52117183A25980095AC82 /* 首页_07.png */; };
+		72D52166183A25980095AC82 /* 首页_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52118183A25980095AC82 /* 首页_10.png */; };
+		72D52167183A25980095AC82 /* 首页_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D52119183A25980095AC82 /* 首页_12.png */; };
+		72D52168183A25980095AC82 /* 首页_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D5211A183A25980095AC82 /* 首页_14.png */; };
+		72D5216D183A261C0095AC82 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D5216C183A261C0095AC82 /* IndexViewController.m */; };
+		72D52170183A26240095AC82 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D5216F183A26240095AC82 /* LeftViewController.m */; };
+		72D52172183A2F8A0095AC82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D52171183A2F8A0095AC82 /* QuartzCore.framework */; };
+		72D52176183A44520095AC82 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D52174183A31160095AC82 /* DDMenuController.m */; };
+		D29CBA33183B3F860035DCC2 /* STBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA30183B3F860035DCC2 /* STBaseNavigationController.m */; };
+		D29CBA34183B3F860035DCC2 /* STBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA32183B3F860035DCC2 /* STBaseViewController.m */; };
+		D29CBA37183B3FAA0035DCC2 /* STSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA36183B3FAA0035DCC2 /* STSearchViewController.m */; };
+		D29CBA3E183B644D0035DCC2 /* STDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA39183B644D0035DCC2 /* STDataHelper.m */; };
+		D29CBA4C183B65640035DCC2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA43183B65640035DCC2 /* FMDatabase.m */; };
+		D29CBA4D183B65640035DCC2 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA45183B65640035DCC2 /* FMDatabaseAdditions.m */; };
+		D29CBA4E183B65640035DCC2 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA47183B65640035DCC2 /* FMDatabasePool.m */; };
+		D29CBA4F183B65640035DCC2 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA49183B65640035DCC2 /* FMDatabaseQueue.m */; };
+		D29CBA50183B65640035DCC2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA4B183B65640035DCC2 /* FMResultSet.m */; };
+		D29CBA53183B6DE90035DCC2 /* STDataHelper+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA52183B6DE90035DCC2 /* STDataHelper+Network.m */; };
+		D29CBA55183B6E340035DCC2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D29CBA54183B6E340035DCC2 /* libsqlite3.0.dylib */; };
+		D29CBA58183B7B690035DCC2 /* STModelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA57183B7B690035DCC2 /* STModelCategory.m */; };
+		D29CBA5B183B7EFB0035DCC2 /* STModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA5A183B7EFB0035DCC2 /* STModelItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		72532652183B826000212F82 /* CategoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryDetailViewController.h; sourceTree = "<group>"; };
+		72532653183B826000212F82 /* CategoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryDetailViewController.m; sourceTree = "<group>"; };
+		7265041D183A581D00282738 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		7265041E183A581D00282738 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		72D5209E183A22E80095AC82 /* SportShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72D520A1183A22E80095AC82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		72D520A3183A22E80095AC82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72D520A5183A22E80095AC82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		72D520A9183A22E80095AC82 /* SportShopping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SportShopping-Info.plist"; sourceTree = "<group>"; };
+		72D520AB183A22E80095AC82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72D520AD183A22E80095AC82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72D520AF183A22E80095AC82 /* SportShopping-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SportShopping-Prefix.pch"; sourceTree = "<group>"; };
+		72D520B0183A22E80095AC82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		72D520B1183A22E80095AC82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		72D520B3183A22E80095AC82 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		72D520B5183A22E80095AC82 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		72D520B7183A22E90095AC82 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		72D520C1183A25980095AC82 /* 商品图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品图片.png"; sourceTree = "<group>"; };
+		72D520C2183A25980095AC82 /* 商品详情-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情-bg.png"; sourceTree = "<group>"; };
+		72D520C3183A25980095AC82 /* nav_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nav_bg.png; path = "商品详情/images/nav_bg.png"; sourceTree = "<group>"; };
+		72D520C4183A25980095AC82 /* 商品详情1_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情1_03.png"; sourceTree = "<group>"; };
+		72D520C5183A25980095AC82 /* 商品详情_03 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情_03 (2).png"; sourceTree = "<group>"; };
+		72D520C6183A25980095AC82 /* 商品详情_03 (3).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情_03 (3).png"; sourceTree = "<group>"; };
+		72D520C7183A25980095AC82 /* nav_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nav_back.png; path = "商品详情/images/nav_back.png"; sourceTree = "<group>"; };
+		72D520C8183A25980095AC82 /* 商品详情_03_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情_03_03.png"; sourceTree = "<group>"; };
+		72D520C9183A25980095AC82 /* 商品详情_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情_06.png"; sourceTree = "<group>"; };
+		72D520CA183A25980095AC82 /* 商品详情_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情_14.png"; sourceTree = "<group>"; };
+		72D520CB183A25980095AC82 /* 商品详情_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情_17.png"; sourceTree = "<group>"; };
+		72D520CC183A25980095AC82 /* 商品详情_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情_21.png"; sourceTree = "<group>"; };
+		72D520CD183A25980095AC82 /* 商品详情_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品详情_23.png"; sourceTree = "<group>"; };
+		72D520D0183A25980095AC82 /* 左滑-背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左滑-背景.png"; sourceTree = "<group>"; };
+		72D520D1183A25980095AC82 /* 左滑_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左滑_02.png"; sourceTree = "<group>"; };
+		72D520D2183A25980095AC82 /* 左滑_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左滑_03.png"; sourceTree = "<group>"; };
+		72D520D3183A25980095AC82 /* 左滑_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左滑_06.png"; sourceTree = "<group>"; };
+		72D520D4183A25980095AC82 /* 左滑_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左滑_09.png"; sourceTree = "<group>"; };
+		72D520D5183A25980095AC82 /* 左滑_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左滑_11.png"; sourceTree = "<group>"; };
+		72D520D6183A25980095AC82 /* 左滑_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左滑_13.png"; sourceTree = "<group>"; };
+		72D520D7183A25980095AC82 /* 左滑_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "左滑_16.png"; sourceTree = "<group>"; };
+		72D520DA183A25980095AC82 /* 商品图片bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品图片bg.png"; sourceTree = "<group>"; };
+		72D520DB183A25980095AC82 /* 商品图片大小.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品图片大小.png"; sourceTree = "<group>"; };
+		72D520DC183A25980095AC82 /* 我喜欢的-背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我喜欢的-背景.png"; sourceTree = "<group>"; };
+		72D520DD183A25980095AC82 /* 我喜欢的_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我喜欢的_03.png"; sourceTree = "<group>"; };
+		72D520DE183A25980095AC82 /* 我喜欢的_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我喜欢的_10.png"; sourceTree = "<group>"; };
+		72D520E1183A25980095AC82 /* 搜索1_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "搜索1_07.png"; sourceTree = "<group>"; };
+		72D520E2183A25980095AC82 /* 搜索2_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "搜索2_07.png"; sourceTree = "<group>"; };
+		72D520E3183A25980095AC82 /* 搜索3_08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "搜索3_08.png"; sourceTree = "<group>"; };
+		72D520E4183A25980095AC82 /* 搜索_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "搜索_03.png"; sourceTree = "<group>"; };
+		72D520E5183A25980095AC82 /* 搜索_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "搜索_10.png"; sourceTree = "<group>"; };
+		72D520E8183A25980095AC82 /* 商品大小.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品大小.png"; sourceTree = "<group>"; };
+		72D520E9183A25980095AC82 /* 商品大背景框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商品大背景框.png"; sourceTree = "<group>"; };
+		72D520EA183A25980095AC82 /* 购物车2_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "购物车2_02.png"; sourceTree = "<group>"; };
+		72D520EB183A25980095AC82 /* 购物车_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "购物车_03.png"; sourceTree = "<group>"; };
+		72D520EC183A25980095AC82 /* nav_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nav_menu.png; path = "购物车/images/nav_menu.png"; sourceTree = "<group>"; };
+		72D520ED183A25980095AC82 /* 购物车_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "购物车_14.png"; sourceTree = "<group>"; };
+		72D520EE183A25980095AC82 /* 购物车_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "购物车_18.png"; sourceTree = "<group>"; };
+		72D520EF183A25980095AC82 /* 购物车_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "购物车_22.png"; sourceTree = "<group>"; };
+		72D520F0183A25980095AC82 /* 购物车bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "购物车bg.png"; sourceTree = "<group>"; };
+		72D520F3183A25980095AC82 /* 人气.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人气.png"; sourceTree = "<group>"; };
+		72D520F4183A25980095AC82 /* 价格.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "价格.png"; sourceTree = "<group>"; };
+		72D520F5183A25980095AC82 /* 图片大小.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片大小.png"; sourceTree = "<group>"; };
+		72D520F6183A25980095AC82 /* 图片背景大小.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片背景大小.png"; sourceTree = "<group>"; };
+		72D520F7183A25980095AC82 /* 相关.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "相关.png"; sourceTree = "<group>"; };
+		72D520F8183A25980095AC82 /* 运动鞋1_46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋1_46.png"; sourceTree = "<group>"; };
+		72D520F9183A25980095AC82 /* 运动鞋2_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋2_02.png"; sourceTree = "<group>"; };
+		72D520FA183A25980095AC82 /* 运动鞋2_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋2_05.png"; sourceTree = "<group>"; };
+		72D520FB183A25980095AC82 /* 运动鞋2_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋2_07.png"; sourceTree = "<group>"; };
+		72D520FC183A25980095AC82 /* 运动鞋2_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋2_09.png"; sourceTree = "<group>"; };
+		72D520FD183A25980095AC82 /* 运动鞋2_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋2_11.png"; sourceTree = "<group>"; };
+		72D520FE183A25980095AC82 /* 运动鞋2_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋2_14.png"; sourceTree = "<group>"; };
+		72D520FF183A25980095AC82 /* 运动鞋2_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋2_17.png"; sourceTree = "<group>"; };
+		72D52100183A25980095AC82 /* 运动鞋2_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋2_20.png"; sourceTree = "<group>"; };
+		72D52101183A25980095AC82 /* 运动鞋2_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋2_23.png"; sourceTree = "<group>"; };
+		72D52102183A25980095AC82 /* 运动鞋_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_03.png"; sourceTree = "<group>"; };
+		72D52103183A25980095AC82 /* 运动鞋_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_06.png"; sourceTree = "<group>"; };
+		72D52104183A25980095AC82 /* 运动鞋_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_11.png"; sourceTree = "<group>"; };
+		72D52105183A25980095AC82 /* 运动鞋_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_13.png"; sourceTree = "<group>"; };
+		72D52106183A25980095AC82 /* 运动鞋_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_15.png"; sourceTree = "<group>"; };
+		72D52107183A25980095AC82 /* 运动鞋_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_17.png"; sourceTree = "<group>"; };
+		72D52108183A25980095AC82 /* 运动鞋_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_20.png"; sourceTree = "<group>"; };
+		72D52109183A25980095AC82 /* 运动鞋_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_23.png"; sourceTree = "<group>"; };
+		72D5210A183A25980095AC82 /* 运动鞋_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_26.png"; sourceTree = "<group>"; };
+		72D5210B183A25980095AC82 /* 运动鞋_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_29.png"; sourceTree = "<group>"; };
+		72D5210C183A25980095AC82 /* 运动鞋_42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_42.png"; sourceTree = "<group>"; };
+		72D5210D183A25980095AC82 /* 运动鞋_52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_52.png"; sourceTree = "<group>"; };
+		72D5210E183A25980095AC82 /* 销量.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "销量.png"; sourceTree = "<group>"; };
+		72D52111183A25980095AC82 /* 首页-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页-bg.png"; sourceTree = "<group>"; };
+		72D52112183A25980095AC82 /* 首页1_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页1_03.png"; sourceTree = "<group>"; };
+		72D52113183A25980095AC82 /* 首页1_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页1_06.png"; sourceTree = "<group>"; };
+		72D52114183A25980095AC82 /* 首页1_08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页1_08.png"; sourceTree = "<group>"; };
+		72D52115183A25980095AC82 /* 首页1_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页1_10.png"; sourceTree = "<group>"; };
+		72D52116183A25980095AC82 /* 首页_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_03.png"; sourceTree = "<group>"; };
+		72D52117183A25980095AC82 /* 首页_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_07.png"; sourceTree = "<group>"; };
+		72D52118183A25980095AC82 /* 首页_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_10.png"; sourceTree = "<group>"; };
+		72D52119183A25980095AC82 /* 首页_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_12.png"; sourceTree = "<group>"; };
+		72D5211A183A25980095AC82 /* 首页_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_14.png"; sourceTree = "<group>"; };
+		72D5216B183A261C0095AC82 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		72D5216C183A261C0095AC82 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		72D5216E183A26240095AC82 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		72D5216F183A26240095AC82 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		72D52171183A2F8A0095AC82 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		72D52173183A31160095AC82 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
+		72D52174183A31160095AC82 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
+		D29CBA2F183B3F860035DCC2 /* STBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBaseNavigationController.h; sourceTree = "<group>"; };
+		D29CBA30183B3F860035DCC2 /* STBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBaseNavigationController.m; sourceTree = "<group>"; };
+		D29CBA31183B3F860035DCC2 /* STBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBaseViewController.h; sourceTree = "<group>"; };
+		D29CBA32183B3F860035DCC2 /* STBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBaseViewController.m; sourceTree = "<group>"; };
+		D29CBA35183B3FAA0035DCC2 /* STSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSearchViewController.h; sourceTree = "<group>"; };
+		D29CBA36183B3FAA0035DCC2 /* STSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSearchViewController.m; sourceTree = "<group>"; };
+		D29CBA38183B644D0035DCC2 /* STDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDataHelper.h; sourceTree = "<group>"; };
+		D29CBA39183B644D0035DCC2 /* STDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDataHelper.m; sourceTree = "<group>"; };
+		D29CBA42183B65640035DCC2 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		D29CBA43183B65640035DCC2 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		D29CBA44183B65640035DCC2 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		D29CBA45183B65640035DCC2 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		D29CBA46183B65640035DCC2 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		D29CBA47183B65640035DCC2 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		D29CBA48183B65640035DCC2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		D29CBA49183B65640035DCC2 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		D29CBA4A183B65640035DCC2 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		D29CBA4B183B65640035DCC2 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		D29CBA51183B6DE90035DCC2 /* STDataHelper+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STDataHelper+Network.h"; sourceTree = "<group>"; };
+		D29CBA52183B6DE90035DCC2 /* STDataHelper+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STDataHelper+Network.m"; sourceTree = "<group>"; };
+		D29CBA54183B6E340035DCC2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		D29CBA56183B7B690035DCC2 /* STModelCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STModelCategory.h; sourceTree = "<group>"; };
+		D29CBA57183B7B690035DCC2 /* STModelCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STModelCategory.m; sourceTree = "<group>"; };
+		D29CBA59183B7EFB0035DCC2 /* STModelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STModelItem.h; sourceTree = "<group>"; };
+		D29CBA5A183B7EFB0035DCC2 /* STModelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STModelItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72D5209B183A22E80095AC82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29CBA55183B6E340035DCC2 /* libsqlite3.0.dylib in Frameworks */,
+				72D52172183A2F8A0095AC82 /* QuartzCore.framework in Frameworks */,
+				72D520A2183A22E80095AC82 /* UIKit.framework in Frameworks */,
+				72D520A4183A22E80095AC82 /* Foundation.framework in Frameworks */,
+				72D520A6183A22E80095AC82 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72D52095183A22E80095AC82 = {
+			isa = PBXGroup;
+			children = (
+				72D520A7183A22E80095AC82 /* SportShopping */,
+				72D520A0183A22E80095AC82 /* Frameworks */,
+				72D5209F183A22E80095AC82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72D5209F183A22E80095AC82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72D5209E183A22E80095AC82 /* SportShopping.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72D520A0183A22E80095AC82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D29CBA54183B6E340035DCC2 /* libsqlite3.0.dylib */,
+				72D52171183A2F8A0095AC82 /* QuartzCore.framework */,
+				72D520A1183A22E80095AC82 /* UIKit.framework */,
+				72D520A3183A22E80095AC82 /* Foundation.framework */,
+				72D520A5183A22E80095AC82 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72D520A7183A22E80095AC82 /* SportShopping */ = {
+			isa = PBXGroup;
+			children = (
+				72D520BE183A25980095AC82 /* Images */,
+				72D520B0183A22E80095AC82 /* AppDelegate.h */,
+				72D520B1183A22E80095AC82 /* AppDelegate.m */,
+				72D52173183A31160095AC82 /* DDMenuController.h */,
+				72D52174183A31160095AC82 /* DDMenuController.m */,
+				D29CBA2F183B3F860035DCC2 /* STBaseNavigationController.h */,
+				D29CBA30183B3F860035DCC2 /* STBaseNavigationController.m */,
+				D29CBA31183B3F860035DCC2 /* STBaseViewController.h */,
+				D29CBA32183B3F860035DCC2 /* STBaseViewController.m */,
+				D29CBA35183B3FAA0035DCC2 /* STSearchViewController.h */,
+				D29CBA36183B3FAA0035DCC2 /* STSearchViewController.m */,
+				D29CBA38183B644D0035DCC2 /* STDataHelper.h */,
+				D29CBA39183B644D0035DCC2 /* STDataHelper.m */,
+				D29CBA51183B6DE90035DCC2 /* STDataHelper+Network.h */,
+				D29CBA52183B6DE90035DCC2 /* STDataHelper+Network.m */,
+				D29CBA56183B7B690035DCC2 /* STModelCategory.h */,
+				D29CBA57183B7B690035DCC2 /* STModelCategory.m */,
+				D29CBA59183B7EFB0035DCC2 /* STModelItem.h */,
+				D29CBA5A183B7EFB0035DCC2 /* STModelItem.m */,
+				D29CBA41183B65640035DCC2 /* FMDB */,
+				72D520A8183A22E80095AC82 /* Supporting Files */,
+				72D5216B183A261C0095AC82 /* IndexViewController.h */,
+				72D5216C183A261C0095AC82 /* IndexViewController.m */,
+				72D5216E183A26240095AC82 /* LeftViewController.h */,
+				72D5216F183A26240095AC82 /* LeftViewController.m */,
+				7265041D183A581D00282738 /* MenuCell.h */,
+				7265041E183A581D00282738 /* MenuCell.m */,
+				72532652183B826000212F82 /* CategoryDetailViewController.h */,
+				72532653183B826000212F82 /* CategoryDetailViewController.m */,
+			);
+			name = SportShopping;
+			path = "购运动";
+			sourceTree = "<group>";
+		};
+		72D520A8183A22E80095AC82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72D520A9183A22E80095AC82 /* SportShopping-Info.plist */,
+				72D520AA183A22E80095AC82 /* InfoPlist.strings */,
+				72D520AD183A22E80095AC82 /* main.m */,
+				72D520AF183A22E80095AC82 /* SportShopping-Prefix.pch */,
+				72D520B3183A22E80095AC82 /* Default.png */,
+				72D520B5183A22E80095AC82 /* Default@2x.png */,
+				72D520B7183A22E90095AC82 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72D520BE183A25980095AC82 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				72D520C3183A25980095AC82 /* nav_bg.png */,
+				72D520C7183A25980095AC82 /* nav_back.png */,
+				72D520EC183A25980095AC82 /* nav_menu.png */,
+				72D520BF183A25980095AC82 /* 商品详情 */,
+				72D520CE183A25980095AC82 /* 左滑 */,
+				72D520D8183A25980095AC82 /* 我喜欢的 */,
+				72D520DF183A25980095AC82 /* 搜索 */,
+				72D520E6183A25980095AC82 /* 购物车 */,
+				72D520F1183A25980095AC82 /* 运动鞋 */,
+				72D5210F183A25980095AC82 /* 首页 */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		72D520BF183A25980095AC82 /* 商品详情 */ = {
+			isa = PBXGroup;
+			children = (
+				72D520C0183A25980095AC82 /* images */,
+			);
+			path = "商品详情";
+			sourceTree = "<group>";
+		};
+		72D520C0183A25980095AC82 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				72D520C1183A25980095AC82 /* 商品图片.png */,
+				72D520C2183A25980095AC82 /* 商品详情-bg.png */,
+				72D520C4183A25980095AC82 /* 商品详情1_03.png */,
+				72D520C5183A25980095AC82 /* 商品详情_03 (2).png */,
+				72D520C6183A25980095AC82 /* 商品详情_03 (3).png */,
+				72D520C8183A25980095AC82 /* 商品详情_03_03.png */,
+				72D520C9183A25980095AC82 /* 商品详情_06.png */,
+				72D520CA183A25980095AC82 /* 商品详情_14.png */,
+				72D520CB183A25980095AC82 /* 商品详情_17.png */,
+				72D520CC183A25980095AC82 /* 商品详情_21.png */,
+				72D520CD183A25980095AC82 /* 商品详情_23.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		72D520CE183A25980095AC82 /* 左滑 */ = {
+			isa = PBXGroup;
+			children = (
+				72D520CF183A25980095AC82 /* images */,
+			);
+			path = "左滑";
+			sourceTree = "<group>";
+		};
+		72D520CF183A25980095AC82 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				72D520D0183A25980095AC82 /* 左滑-背景.png */,
+				72D520D1183A25980095AC82 /* 左滑_02.png */,
+				72D520D2183A25980095AC82 /* 左滑_03.png */,
+				72D520D3183A25980095AC82 /* 左滑_06.png */,
+				72D520D4183A25980095AC82 /* 左滑_09.png */,
+				72D520D5183A25980095AC82 /* 左滑_11.png */,
+				72D520D6183A25980095AC82 /* 左滑_13.png */,
+				72D520D7183A25980095AC82 /* 左滑_16.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		72D520D8183A25980095AC82 /* 我喜欢的 */ = {
+			isa = PBXGroup;
+			children = (
+				72D520D9183A25980095AC82 /* images */,
+			);
+			path = "我喜欢的";
+			sourceTree = "<group>";
+		};
+		72D520D9183A25980095AC82 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				72D520DA183A25980095AC82 /* 商品图片bg.png */,
+				72D520DB183A25980095AC82 /* 商品图片大小.png */,
+				72D520DC183A25980095AC82 /* 我喜欢的-背景.png */,
+				72D520DD183A25980095AC82 /* 我喜欢的_03.png */,
+				72D520DE183A25980095AC82 /* 我喜欢的_10.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		72D520DF183A25980095AC82 /* 搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				72D520E0183A25980095AC82 /* images */,
+			);
+			path = "搜索";
+			sourceTree = "<group>";
+		};
+		72D520E0183A25980095AC82 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				72D520E1183A25980095AC82 /* 搜索1_07.png */,
+				72D520E2183A25980095AC82 /* 搜索2_07.png */,
+				72D520E3183A25980095AC82 /* 搜索3_08.png */,
+				72D520E4183A25980095AC82 /* 搜索_03.png */,
+				72D520E5183A25980095AC82 /* 搜索_10.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		72D520E6183A25980095AC82 /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				72D520E7183A25980095AC82 /* images */,
+			);
+			path = "购物车";
+			sourceTree = "<group>";
+		};
+		72D520E7183A25980095AC82 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				72D520E8183A25980095AC82 /* 商品大小.png */,
+				72D520E9183A25980095AC82 /* 商品大背景框.png */,
+				72D520EA183A25980095AC82 /* 购物车2_02.png */,
+				72D520EB183A25980095AC82 /* 购物车_03.png */,
+				72D520ED183A25980095AC82 /* 购物车_14.png */,
+				72D520EE183A25980095AC82 /* 购物车_18.png */,
+				72D520EF183A25980095AC82 /* 购物车_22.png */,
+				72D520F0183A25980095AC82 /* 购物车bg.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		72D520F1183A25980095AC82 /* 运动鞋 */ = {
+			isa = PBXGroup;
+			children = (
+				72D520F2183A25980095AC82 /* images */,
+			);
+			path = "运动鞋";
+			sourceTree = "<group>";
+		};
+		72D520F2183A25980095AC82 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				72D520F3183A25980095AC82 /* 人气.png */,
+				72D520F4183A25980095AC82 /* 价格.png */,
+				72D520F5183A25980095AC82 /* 图片大小.png */,
+				72D520F6183A25980095AC82 /* 图片背景大小.png */,
+				72D520F7183A25980095AC82 /* 相关.png */,
+				72D520F8183A25980095AC82 /* 运动鞋1_46.png */,
+				72D520F9183A25980095AC82 /* 运动鞋2_02.png */,
+				72D520FA183A25980095AC82 /* 运动鞋2_05.png */,
+				72D520FB183A25980095AC82 /* 运动鞋2_07.png */,
+				72D520FC183A25980095AC82 /* 运动鞋2_09.png */,
+				72D520FD183A25980095AC82 /* 运动鞋2_11.png */,
+				72D520FE183A25980095AC82 /* 运动鞋2_14.png */,
+				72D520FF183A25980095AC82 /* 运动鞋2_17.png */,
+				72D52100183A25980095AC82 /* 运动鞋2_20.png */,
+				72D52101183A25980095AC82 /* 运动鞋2_23.png */,
+				72D52102183A25980095AC82 /* 运动鞋_03.png */,
+				72D52103183A25980095AC82 /* 运动鞋_06.png */,
+				72D52104183A25980095AC82 /* 运动鞋_11.png */,
+				72D52105183A25980095AC82 /* 运动鞋_13.png */,
+				72D52106183A25980095AC82 /* 运动鞋_15.png */,
+				72D52107183A25980095AC82 /* 运动鞋_17.png */,
+				72D52108183A25980095AC82 /* 运动鞋_20.png */,
+				72D52109183A25980095AC82 /* 运动鞋_23.png */,
+				72D5210A183A25980095AC82 /* 运动鞋_26.png */,
+				72D5210B183A25980095AC82 /* 运动鞋_29.png */,
+				72D5210C183A25980095AC82 /* 运动鞋_42.png */,
+				72D5210D183A25980095AC82 /* 运动鞋_52.png */,
+				72D5210E183A25980095AC82 /* 销量.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		72D5210F183A25980095AC82 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				72D52110183A25980095AC82 /* images */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		72D52110183A25980095AC82 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				72D52111183A25980095AC82 /* 首页-bg.png */,
+				72D52112183A25980095AC82 /* 首页1_03.png */,
+				72D52113183A25980095AC82 /* 首页1_06.png */,
+				72D52114183A25980095AC82 /* 首页1_08.png */,
+				72D52115183A25980095AC82 /* 首页1_10.png */,
+				72D52116183A25980095AC82 /* 首页_03.png */,
+				72D52117183A25980095AC82 /* 首页_07.png */,
+				72D52118183A25980095AC82 /* 首页_10.png */,
+				72D52119183A25980095AC82 /* 首页_12.png */,
+				72D5211A183A25980095AC82 /* 首页_14.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		D29CBA41183B65640035DCC2 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				D29CBA42183B65640035DCC2 /* FMDatabase.h */,
+				D29CBA43183B65640035DCC2 /* FMDatabase.m */,
+				D29CBA44183B65640035DCC2 /* FMDatabaseAdditions.h */,
+				D29CBA45183B65640035DCC2 /* FMDatabaseAdditions.m */,
+				D29CBA46183B65640035DCC2 /* FMDatabasePool.h */,
+				D29CBA47183B65640035DCC2 /* FMDatabasePool.m */,
+				D29CBA48183B65640035DCC2 /* FMDatabaseQueue.h */,
+				D29CBA49183B65640035DCC2 /* FMDatabaseQueue.m */,
+				D29CBA4A183B65640035DCC2 /* FMResultSet.h */,
+				D29CBA4B183B65640035DCC2 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72D5209D183A22E80095AC82 /* SportShopping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72D520BB183A22E90095AC82 /* Build configuration list for PBXNativeTarget "SportShopping" */;
+			buildPhases = (
+				72D5209A183A22E80095AC82 /* Sources */,
+				72D5209B183A22E80095AC82 /* Frameworks */,
+				72D5209C183A22E80095AC82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SportShopping;
+			productName = "购运动";
+			productReference = 72D5209E183A22E80095AC82 /* SportShopping.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72D52096183A22E80095AC82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = one_vic;
+			};
+			buildConfigurationList = 72D52099183A22E80095AC82 /* Build configuration list for PBXProject "SportShopping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72D52095183A22E80095AC82;
+			productRefGroup = 72D5209F183A22E80095AC82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72D5209D183A22E80095AC82 /* SportShopping */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72D5209C183A22E80095AC82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72D520AC183A22E80095AC82 /* InfoPlist.strings in Resources */,
+				72D520B4183A22E80095AC82 /* Default.png in Resources */,
+				72D520B6183A22E90095AC82 /* Default@2x.png in Resources */,
+				72D520B8183A22E90095AC82 /* Default-568h@2x.png in Resources */,
+				72D5211B183A25980095AC82 /* 商品图片.png in Resources */,
+				72D5211C183A25980095AC82 /* 商品详情-bg.png in Resources */,
+				72D5211D183A25980095AC82 /* nav_bg.png in Resources */,
+				72D5211E183A25980095AC82 /* 商品详情1_03.png in Resources */,
+				72D5211F183A25980095AC82 /* 商品详情_03 (2).png in Resources */,
+				72D52120183A25980095AC82 /* 商品详情_03 (3).png in Resources */,
+				72D52121183A25980095AC82 /* nav_back.png in Resources */,
+				72D52122183A25980095AC82 /* 商品详情_03_03.png in Resources */,
+				72D52123183A25980095AC82 /* 商品详情_06.png in Resources */,
+				72D52124183A25980095AC82 /* 商品详情_14.png in Resources */,
+				72D52125183A25980095AC82 /* 商品详情_17.png in Resources */,
+				72D52126183A25980095AC82 /* 商品详情_21.png in Resources */,
+				72D52127183A25980095AC82 /* 商品详情_23.png in Resources */,
+				72D52128183A25980095AC82 /* 左滑-背景.png in Resources */,
+				72D52129183A25980095AC82 /* 左滑_02.png in Resources */,
+				72D5212A183A25980095AC82 /* 左滑_03.png in Resources */,
+				72D5212B183A25980095AC82 /* 左滑_06.png in Resources */,
+				72D5212C183A25980095AC82 /* 左滑_09.png in Resources */,
+				72D5212D183A25980095AC82 /* 左滑_11.png in Resources */,
+				72D5212E183A25980095AC82 /* 左滑_13.png in Resources */,
+				72D5212F183A25980095AC82 /* 左滑_16.png in Resources */,
+				72D52130183A25980095AC82 /* 商品图片bg.png in Resources */,
+				72D52131183A25980095AC82 /* 商品图片大小.png in Resources */,
+				72D52132183A25980095AC82 /* 我喜欢的-背景.png in Resources */,
+				72D52133183A25980095AC82 /* 我喜欢的_03.png in Resources */,
+				72D52134183A25980095AC82 /* 我喜欢的_10.png in Resources */,
+				72D52135183A25980095AC82 /* 搜索1_07.png in Resources */,
+				72D52136183A25980095AC82 /* 搜索2_07.png in Resources */,
+				72D52137183A25980095AC82 /* 搜索3_08.png in Resources */,
+				72D52138183A25980095AC82 /* 搜索_03.png in Resources */,
+				72D52139183A25980095AC82 /* 搜索_10.png in Resources */,
+				72D5213A183A25980095AC82 /* 商品大小.png in Resources */,
+				72D5213B183A25980095AC82 /* 商品大背景框.png in Resources */,
+				72D5213C183A25980095AC82 /* 购物车2_02.png in Resources */,
+				72D5213D183A25980095AC82 /* 购物车_03.png in Resources */,
+				72D5213E183A25980095AC82 /* nav_menu.png in Resources */,
+				72D5213F183A25980095AC82 /* 购物车_14.png in Resources */,
+				72D52140183A25980095AC82 /* 购物车_18.png in Resources */,
+				72D52141183A25980095AC82 /* 购物车_22.png in Resources */,
+				72D52142183A25980095AC82 /* 购物车bg.png in Resources */,
+				72D52143183A25980095AC82 /* 人气.png in Resources */,
+				72D52144183A25980095AC82 /* 价格.png in Resources */,
+				72D52145183A25980095AC82 /* 图片大小.png in Resources */,
+				72D52146183A25980095AC82 /* 图片背景大小.png in Resources */,
+				72D52147183A25980095AC82 /* 相关.png in Resources */,
+				72D52148183A25980095AC82 /* 运动鞋1_46.png in Resources */,
+				72D52149183A25980095AC82 /* 运动鞋2_02.png in Resources */,
+				72D5214A183A25980095AC82 /* 运动鞋2_05.png in Resources */,
+				72D5214B183A25980095AC82 /* 运动鞋2_07.png in Resources */,
+				72D5214C183A25980095AC82 /* 运动鞋2_09.png in Resources */,
+				72D5214D183A25980095AC82 /* 运动鞋2_11.png in Resources */,
+				72D5214E183A25980095AC82 /* 运动鞋2_14.png in Resources */,
+				72D5214F183A25980095AC82 /* 运动鞋2_17.png in Resources */,
+				72D52150183A25980095AC82 /* 运动鞋2_20.png in Resources */,
+				72D52151183A25980095AC82 /* 运动鞋2_23.png in Resources */,
+				72D52152183A25980095AC82 /* 运动鞋_03.png in Resources */,
+				72D52153183A25980095AC82 /* 运动鞋_06.png in Resources */,
+				72D52154183A25980095AC82 /* 运动鞋_11.png in Resources */,
+				72D52155183A25980095AC82 /* 运动鞋_13.png in Resources */,
+				72D52156183A25980095AC82 /* 运动鞋_15.png in Resources */,
+				72D52157183A25980095AC82 /* 运动鞋_17.png in Resources */,
+				72D52158183A25980095AC82 /* 运动鞋_20.png in Resources */,
+				72D52159183A25980095AC82 /* 运动鞋_23.png in Resources */,
+				72D5215A183A25980095AC82 /* 运动鞋_26.png in Resources */,
+				72D5215B183A25980095AC82 /* 运动鞋_29.png in Resources */,
+				72D5215C183A25980095AC82 /* 运动鞋_42.png in Resources */,
+				72D5215D183A25980095AC82 /* 运动鞋_52.png in Resources */,
+				72D5215E183A25980095AC82 /* 销量.png in Resources */,
+				72D5215F183A25980095AC82 /* 首页-bg.png in Resources */,
+				72D52160183A25980095AC82 /* 首页1_03.png in Resources */,
+				72D52161183A25980095AC82 /* 首页1_06.png in Resources */,
+				72D52162183A25980095AC82 /* 首页1_08.png in Resources */,
+				72D52163183A25980095AC82 /* 首页1_10.png in Resources */,
+				72D52164183A25980095AC82 /* 首页_03.png in Resources */,
+				72D52165183A25980095AC82 /* 首页_07.png in Resources */,
+				72D52166183A25980095AC82 /* 首页_10.png in Resources */,
+				72D52167183A25980095AC82 /* 首页_12.png in Resources */,
+				72D52168183A25980095AC82 /* 首页_14.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72D5209A183A22E80095AC82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72D52176183A44520095AC82 /* DDMenuController.m in Sources */,
+				72D520AE183A22E80095AC82 /* main.m in Sources */,
+				72532654183B826000212F82 /* CategoryDetailViewController.m in Sources */,
+				D29CBA4C183B65640035DCC2 /* FMDatabase.m in Sources */,
+				D29CBA34183B3F860035DCC2 /* STBaseViewController.m in Sources */,
+				72D520B2183A22E80095AC82 /* AppDelegate.m in Sources */,
+				D29CBA4D183B65640035DCC2 /* FMDatabaseAdditions.m in Sources */,
+				D29CBA3E183B644D0035DCC2 /* STDataHelper.m in Sources */,
+				D29CBA5B183B7EFB0035DCC2 /* STModelItem.m in Sources */,
+				D29CBA53183B6DE90035DCC2 /* STDataHelper+Network.m in Sources */,
+				D29CBA58183B7B690035DCC2 /* STModelCategory.m in Sources */,
+				D29CBA4E183B65640035DCC2 /* FMDatabasePool.m in Sources */,
+				72D5216D183A261C0095AC82 /* IndexViewController.m in Sources */,
+				D29CBA4F183B65640035DCC2 /* FMDatabaseQueue.m in Sources */,
+				D29CBA37183B3FAA0035DCC2 /* STSearchViewController.m in Sources */,
+				72D52170183A26240095AC82 /* LeftViewController.m in Sources */,
+				7265041F183A581E00282738 /* MenuCell.m in Sources */,
+				D29CBA50183B65640035DCC2 /* FMResultSet.m in Sources */,
+				D29CBA33183B3F860035DCC2 /* STBaseNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72D520AA183A22E80095AC82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72D520AB183A22E80095AC82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72D520B9183A22E90095AC82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		72D520BA183A22E90095AC82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72D520BC183A22E90095AC82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "购运动/SportShopping-Prefix.pch";
+				INFOPLIST_FILE = "购运动/SportShopping-Info.plist";
+				PRODUCT_NAME = SportShopping;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		72D520BD183A22E90095AC82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "购运动/SportShopping-Prefix.pch";
+				INFOPLIST_FILE = "购运动/SportShopping-Info.plist";
+				PRODUCT_NAME = SportShopping;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72D52099183A22E80095AC82 /* Build configuration list for PBXProject "SportShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72D520B9183A22E90095AC82 /* Debug */,
+				72D520BA183A22E90095AC82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72D520BB183A22E90095AC82 /* Build configuration list for PBXNativeTarget "SportShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72D520BC183A22E90095AC82 /* Debug */,
+				72D520BD183A22E90095AC82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72D52096183A22E80095AC82 /* Project object */;
+}

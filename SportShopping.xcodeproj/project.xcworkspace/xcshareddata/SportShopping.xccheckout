@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6AE234C2-35CA-49E7-9C06-08BCFB18DE9E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SportShopping</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F0E59766-1938-4C16-8C23-ABF7EB746372</key>
+		<string>https://github.com/onevic/SportShopping.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SportShopping.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F0E59766-1938-4C16-8C23-ABF7EB746372</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/onevic/SportShopping.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F0E59766-1938-4C16-8C23-ABF7EB746372</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F0E59766-1938-4C16-8C23-ABF7EB746372</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SportShopping</string>
+		</dict>
+	</array>
+</dict>
+</plist>
