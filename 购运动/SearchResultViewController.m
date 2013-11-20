@@ -7,7 +7,7 @@
 //
 
 #import "SearchResultViewController.h"
-#import "MyCell.h"
+#import "SearchResultCell.h"
 #import "STDataHelper+Network.h"
 #import "STModelItem.h"
 
@@ -106,9 +106,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MyCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    SearchResultCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
-        cell = [[MyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = [[SearchResultCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     return cell;
 }
