@@ -81,19 +81,33 @@
 @end
 
 @implementation STDataHelper (Search)
-- (void)searchFetchNetworkDataStart
+- (void)searchWithKeyword:(NSString *)keyword
 {
-    
+    NSString *urlString = kServer@"get_search.php?item_name=";
+    urlString = [NSString stringWithFormat:@"%@%@", urlString, keyword];
     _searchFetchNetworkDataBlockOperation = [NSBlockOperation blockOperationWithBlock:^{
-        
+        NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+        if (jsonData)
+        {
+            NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
+            NSLog(@"%@", rootDict);
+            NSArray *list = [rootDict objectForKey:@"List"];
+            NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+            NSMutableArray *items = [[userDefaults objectForKey:@"Item"] copy];
+            if (items)
+            {
+                [items removeAllObjects];
+            }
+            [items addObjectsFromArray:list];
+            [userDefaults setObject:items forKey:@"Item"];
+            [userDefaults synchronize];
+            
+            _searchFetchNetworkDataBlockOperation = nil;
+            [[NSNotificationCenter defaultCenter] postNotificationName:kNotifySearchWithKeywordCompleted object:nil];
+        }else {
+            _searchFetchNetworkDataBlockOperation = nil;
+            [[NSNotificationCenter defaultCenter] postNotificationName:kNotifySearchWithKeywordFailed object:nil];
+        }
     }];
-    [_operationQueue addOperation:_searchFetchNetworkDataBlockOperation];
-}
-- (void)searchFetchNetworkDataCancel
-{
-    if (_searchFetchNetworkDataBlockOperation)
-    {
-        [_searchFetchNetworkDataBlockOperation cancel];
-    }
 }
 @end

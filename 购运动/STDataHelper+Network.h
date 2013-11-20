@@ -23,7 +23,8 @@
 - (void)homeLoadCategoryDetail:(STModelCategory *)cate; //加载某个分类的详细信息
 @end
 
+#define kNotifySearchWithKeywordCompleted @"kNotifySearchWithKeywordCompleted"
+#define kNotifySearchWithKeywordFailed @"kNotifySearchWithKeywordFailed"
 @interface STDataHelper (Search)
-- (void)searchFetchNetworkDataStart;
-- (void)searchFetchNetworkDataCancel;
+- (void)searchWithKeyword:(NSString *)keyword;
 @end
