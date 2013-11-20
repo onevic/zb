@@ -11,7 +11,7 @@
 		722817B6183C97A600B72566 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722817B5183C97A600B72566 /* ItemDetailViewController.m */; };
 		722817B9183C9BC900B72566 /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722817B8183C9BC900B72566 /* SearchResultViewController.m */; };
 		7231BE0B183CA790003918E5 /* SearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7231BE0A183CA790003918E5 /* SearchResultCell.m */; };
-		7231BE14183CC0DE003918E5 /* 运动鞋_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7231BE0C183CC0DE003918E5 /* 运动鞋_03.png */; };
+		7231BE14183CC0DE003918E5 /* 运动鞋_03nmb.png in Resources */ = {isa = PBXBuildFile; fileRef = 7231BE0C183CC0DE003918E5 /* 运动鞋_03nmb.png */; };
 		7231BE15183CC0DE003918E5 /* 运动鞋_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 7231BE0D183CC0DE003918E5 /* 运动鞋_05.png */; };
 		7231BE16183CC0DE003918E5 /* 运动鞋_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 7231BE0E183CC0DE003918E5 /* 运动鞋_07.png */; };
 		7231BE17183CC0DE003918E5 /* 运动鞋_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 7231BE0F183CC0DE003918E5 /* 运动鞋_09.png */; };
@@ -19,6 +19,7 @@
 		7231BE19183CC0DE003918E5 /* 运动鞋1_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 7231BE11183CC0DE003918E5 /* 运动鞋1_05.png */; };
 		7231BE1A183CC0DE003918E5 /* 运动鞋1_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 7231BE12183CC0DE003918E5 /* 运动鞋1_07.png */; };
 		7231BE1B183CC0DE003918E5 /* 运动鞋1_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 7231BE13183CC0DE003918E5 /* 运动鞋1_09.png */; };
+		7231BE1F183CD139003918E5 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7231BE1E183CD139003918E5 /* CenterViewController.m */; };
 		72532654183B826000212F82 /* CategoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72532653183B826000212F82 /* CategoryDetailViewController.m */; };
 		7265041F183A581E00282738 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265041E183A581D00282738 /* MenuCell.m */; };
 		72D520A2183A22E80095AC82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D520A1183A22E80095AC82 /* UIKit.framework */; };
@@ -144,7 +145,7 @@
 		722817B8183C9BC900B72566 /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
 		7231BE09183CA790003918E5 /* SearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultCell.h; sourceTree = "<group>"; };
 		7231BE0A183CA790003918E5 /* SearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultCell.m; sourceTree = "<group>"; };
-		7231BE0C183CC0DE003918E5 /* 运动鞋_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_03.png"; sourceTree = "<group>"; };
+		7231BE0C183CC0DE003918E5 /* 运动鞋_03nmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_03nmb.png"; sourceTree = "<group>"; };
 		7231BE0D183CC0DE003918E5 /* 运动鞋_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_05.png"; sourceTree = "<group>"; };
 		7231BE0E183CC0DE003918E5 /* 运动鞋_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_07.png"; sourceTree = "<group>"; };
 		7231BE0F183CC0DE003918E5 /* 运动鞋_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋_09.png"; sourceTree = "<group>"; };
@@ -152,6 +153,8 @@
 		7231BE11183CC0DE003918E5 /* 运动鞋1_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋1_05.png"; sourceTree = "<group>"; };
 		7231BE12183CC0DE003918E5 /* 运动鞋1_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋1_07.png"; sourceTree = "<group>"; };
 		7231BE13183CC0DE003918E5 /* 运动鞋1_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "运动鞋1_09.png"; sourceTree = "<group>"; };
+		7231BE1D183CD139003918E5 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		7231BE1E183CD139003918E5 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		72532652183B826000212F82 /* CategoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryDetailViewController.h; sourceTree = "<group>"; };
 		72532653183B826000212F82 /* CategoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryDetailViewController.m; sourceTree = "<group>"; };
 		7265041D183A581D00282738 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
@@ -317,6 +320,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7231BE1C183CD123003918E5 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				7231BE1D183CD139003918E5 /* CenterViewController.h */,
+				7231BE1E183CD139003918E5 /* CenterViewController.m */,
+			);
+			name = Center;
+			sourceTree = "<group>";
+		};
 		72D52095183A22E80095AC82 = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +361,7 @@
 		72D520A7183A22E80095AC82 /* SportShopping */ = {
 			isa = PBXGroup;
 			children = (
+				7231BE1C183CD123003918E5 /* Center */,
 				D2506782183CC16A00E57393 /* NSString+URLEncoding.h */,
 				D2506783183CC16A00E57393 /* NSString+URLEncoding.m */,
 				72D520BE183A25980095AC82 /* Images */,
@@ -390,7 +403,7 @@
 				72D520C3183A25980095AC82 /* nav_bg.png */,
 				72D520C7183A25980095AC82 /* nav_back.png */,
 				72D520EC183A25980095AC82 /* nav_menu.png */,
-				7231BE0C183CC0DE003918E5 /* 运动鞋_03.png */,
+				7231BE0C183CC0DE003918E5 /* 运动鞋_03nmb.png */,
 				7231BE0D183CC0DE003918E5 /* 运动鞋_05.png */,
 				7231BE0E183CC0DE003918E5 /* 运动鞋_07.png */,
 				7231BE0F183CC0DE003918E5 /* 运动鞋_09.png */,
@@ -769,7 +782,7 @@
 				72D52122183A25980095AC82 /* 商品详情_03_03.png in Resources */,
 				72D52123183A25980095AC82 /* 商品详情_06.png in Resources */,
 				72D52124183A25980095AC82 /* 商品详情_14.png in Resources */,
-				7231BE14183CC0DE003918E5 /* 运动鞋_03.png in Resources */,
+				7231BE14183CC0DE003918E5 /* 运动鞋_03nmb.png in Resources */,
 				72D52125183A25980095AC82 /* 商品详情_17.png in Resources */,
 				72D52126183A25980095AC82 /* 商品详情_21.png in Resources */,
 				72D52127183A25980095AC82 /* 商品详情_23.png in Resources */,
@@ -871,6 +884,7 @@
 				D29CBA5B183B7EFB0035DCC2 /* STModelItem.m in Sources */,
 				D29CBA53183B6DE90035DCC2 /* STDataHelper+Network.m in Sources */,
 				D29CBA58183B7B690035DCC2 /* STModelCategory.m in Sources */,
+				7231BE1F183CD139003918E5 /* CenterViewController.m in Sources */,
 				D29CBA4E183B65640035DCC2 /* FMDatabasePool.m in Sources */,
 				72D5216D183A261C0095AC82 /* IndexViewController.m in Sources */,
 				D21CBBB5183C607700A1B88D /* SDImageCache.m in Sources */,

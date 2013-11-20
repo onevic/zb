@@ -21,6 +21,7 @@
     UIImageView *_topImageView;
     UITableView *_tableView;
     UILabel *_titleLabel;
+    NSMutableArray *_btnArray;
 }
 
 - (void)viewDidLoad
@@ -28,6 +29,7 @@
     [super viewDidLoad];
 
     _allItems = [[NSMutableArray alloc] init];
+    _btnArray = [[NSMutableArray alloc] initWithCapacity:4];
     /*加载数据*/
     [[STDataHelper sharedInstance] homeLoadCategoryDetail:_cate];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailCompleted) name:kNotifyHomeLoadCategoryDetailCompleted object:nil];
@@ -67,29 +69,38 @@
     btn1.tag = 101;
     btn1.frame = CGRectMake(13, 11.5, 54, 19.5);
     [btn1 setImage:[UIImage imageNamed:@"运动鞋1_03.png"] forState:UIControlStateNormal];
-    [btn1 setImage:[UIImage imageNamed:@"运动鞋_03.png"] forState:UIControlStateSelected];
+    [btn1 setImage:[UIImage imageNamed:@"运动鞋_03nmb.png"] forState:UIControlStateSelected];
+    [btn1 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [topView addSubview:btn1];
+    [_btnArray addObject:btn1];
+    btn1.selected = YES;
     
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn2.tag = 102;
     btn2.frame = CGRectMake(93, 11.5, 54, 19.5);
     [btn2 setImage:[UIImage imageNamed:@"运动鞋_05.png"] forState:UIControlStateNormal];
     [btn2 setImage:[UIImage imageNamed:@"运动鞋1_05.png"] forState:UIControlStateSelected];
+    [btn2 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [topView addSubview:btn2];
+    [_btnArray addObject:btn2];
     
     UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn3.tag = 103;
     btn3.frame = CGRectMake(173, 11.5, 54, 19.5);
     [btn3 setImage:[UIImage imageNamed:@"运动鞋_07.png"] forState:UIControlStateNormal];
     [btn3 setImage:[UIImage imageNamed:@"运动鞋1_07.png"] forState:UIControlStateSelected];
+    [btn3 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [topView addSubview:btn3];
+    [_btnArray addObject:btn3];
     
     UIButton *btn4 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn4.tag = 104;
     btn4.frame = CGRectMake(253, 11.5, 54, 19.5);
     [btn4 setImage:[UIImage imageNamed:@"运动鞋_09.png"] forState:UIControlStateNormal];
     [btn4 setImage:[UIImage imageNamed:@"运动鞋1_09.png"] forState:UIControlStateSelected];
+    [btn4 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [topView addSubview:btn4];
+    [_btnArray addObject:btn4];
     
     _tableView.frame = CGRectMake(0, 43, kScreenWidth, kScreenHeight-87-20);
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -99,6 +110,19 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailCompleted) name:kNotifyHomeLoadCategoryDetailCompleted object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailFailed) name:kNotifyHomeLoadCategoryDetailFailed object:nil];
+}
+
+- (void)btnClick:(UIButton *)btn
+{
+    int selected = btn.tag - 100 - 1;
+    NSArray *namesArray = @[@"相关", @"价格", @"销量", @"人气"];
+    btn.selected = YES;
+    _topImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", [namesArray objectAtIndex:selected]]];
+    for (UIButton *button in _btnArray) {
+        if (button.tag != btn.tag) {
+            button.selected = NO;
+        }
+    }
 }
 
 
