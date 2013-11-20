@@ -42,7 +42,7 @@
         _payBtn.titleLabel.textColor = [UIColor whiteColor];
         [self.contentView addSubview:_payBtn];
         
-        UIImageView *leftImageView = [[UIImageView alloc] initWithFrame:CGRectMake(320-20-9.5, 120-20-15, 9.5, 15)];
+        UIImageView *leftImageView = [[UIImageView alloc] initWithFrame:CGRectMake(320-20-9.5, 52.5, 9.5, 15)];
         leftImageView.image = [UIImage imageNamed:@"购物车_14.png"];
         [self.contentView addSubview:leftImageView];
     }

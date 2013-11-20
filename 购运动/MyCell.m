@@ -40,6 +40,7 @@
         _favouriteBtn.backgroundColor = [UIColor clearColor];
         _favouriteBtn.frame = CGRectMake(320-20-15, 100-15, 15, 12.5);
         [_favouriteBtn setImage:[UIImage imageNamed:@"运动鞋_42.png"] forState:UIControlStateNormal];
+        [_favouriteBtn addTarget:self action:@selector(favouriteBtnClicked) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:_favouriteBtn];
         
         // 分割线
@@ -48,6 +49,11 @@
         [self.contentView addSubview:breakLine];
     }
     return self;
+}
+
+- (void)favouriteBtnClicked
+{
+    
 }
 
 - (void)layoutWithItem:(STModelItem *)item

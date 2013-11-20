@@ -57,25 +57,35 @@
     [_navBar addSubview:_titleLabel];
     
     // 选项按钮
-    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, 320, 43)];
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 2, 320, 43)];
+    topView.backgroundColor = [UIColor redColor];
     [self.view addSubview:topView];
     _topImageView= [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 43)];
+    _topImageView.image = [UIImage imageNamed:@"相关.png"];
     [topView addSubview:_topImageView];
 
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn1.frame = CGRectMake(0, 0, 80, 40);
+    [btn1 setImage:[UIImage imageNamed:@"运动鞋1_03.png"] forState:UIControlStateNormal];
+    [btn1 setImage:[UIImage imageNamed:@"运动鞋_03.png"] forState:UIControlStateSelected];
     [topView addSubview:btn1];
     
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn2.frame = CGRectMake(80, 0, 80, 40);
+    [btn2 setImage:[UIImage imageNamed:@"运动鞋_05.png"] forState:UIControlStateNormal];
+    [btn2 setImage:[UIImage imageNamed:@"运动鞋1_05.png"] forState:UIControlStateSelected];
     [topView addSubview:btn2];
     
     UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn3.frame = CGRectMake(160, 0, 80, 40);
+    [btn3 setImage:[UIImage imageNamed:@"运动鞋_07.png"] forState:UIControlStateNormal];
+    [btn3 setImage:[UIImage imageNamed:@"运动鞋1_07.png"] forState:UIControlStateSelected];
     [topView addSubview:btn3];
     
     UIButton *btn4 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn4.frame = CGRectMake(240, 0, 80, 40);
+    [btn4 setImage:[UIImage imageNamed:@"运动鞋_09.png"] forState:UIControlStateNormal];
+    [btn4 setImage:[UIImage imageNamed:@"运动鞋1_09.png"] forState:UIControlStateSelected];
     [topView addSubview:btn4];
     
     _tableView.frame = CGRectMake(0, 43, kScreenWidth, kScreenHeight-87-20);
