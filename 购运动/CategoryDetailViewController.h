@@ -12,6 +12,7 @@
 @interface CategoryDetailViewController : STBaseViewController <UITableViewDataSource,UITableViewDelegate>
 {
     STModelCategory *_cate;
+    NSMutableArray *_allItems;
 }
 - (id)initWithCategory:(STModelCategory *)cate;
 
