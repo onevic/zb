@@ -11,6 +11,7 @@
 #import "STDataHelper+Network.h"
 #import "STModelItem.h"
 #import "MyCell.h"
+#import "ItemDetailViewController.h"
 
 @interface CategoryDetailViewController ()
 
@@ -19,11 +20,13 @@
 @implementation CategoryDetailViewController {
     UIImageView *_topImageView;
     UITableView *_tableView;
+    UILabel *_titleLabel;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     _allItems = [[NSMutableArray alloc] init];
     /*加载数据*/
     [[STDataHelper sharedInstance] homeLoadCategoryDetail:_cate];
@@ -37,6 +40,15 @@
 - (void)createUI
 {
     [self addBackButton];
+    
+    // 添加标题
+    // 标题
+    _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(120, 13, 80, 18)];
+    _titleLabel.text = [NSString stringWithFormat:@"%@",_cate.categoryName];
+    _titleLabel.textAlignment = NSTextAlignmentCenter;
+    _titleLabel.font = [UIFont boldSystemFontOfSize:18];
+    _titleLabel.textColor = [UIColor whiteColor];
+    [_navBar addSubview:_titleLabel];
     
     // 选项按钮
     UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, 320, 43)];
@@ -60,7 +72,7 @@
     btn4.frame = CGRectMake(240, 0, 80, 40);
     [topView addSubview:btn4];
     
-    _tableView.frame = CGRectMake(0, 43, 320, kScreenHeight-87-20);
+    _tableView.frame = CGRectMake(0, 43, kScreenWidth, kScreenHeight-87-20);
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -118,6 +130,13 @@
 }
 
 #pragma mark tableView
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ItemDetailViewController *itemDetail = [[ItemDetailViewController alloc] init];
+    STModelItem *item = [_allItems objectAtIndex:indexPath.row];
+    [itemDetail layoutWithItem:item];
+    [self.navigationController pushViewController:itemDetail animated:YES];
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;

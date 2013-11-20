@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		72281778183C462400B72566 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72281777183C462400B72566 /* MyCell.m */; };
+		722817B6183C97A600B72566 /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722817B5183C97A600B72566 /* ItemDetailViewController.m */; };
+		722817B9183C9BC900B72566 /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722817B8183C9BC900B72566 /* SearchResultViewController.m */; };
 		72532654183B826000212F82 /* CategoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72532653183B826000212F82 /* CategoryDetailViewController.m */; };
 		7265041F183A581E00282738 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265041E183A581D00282738 /* MenuCell.m */; };
 		72D520A2183A22E80095AC82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D520A1183A22E80095AC82 /* UIKit.framework */; };
@@ -126,6 +128,10 @@
 /* Begin PBXFileReference section */
 		72281776183C462400B72566 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		72281777183C462400B72566 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		722817B4183C97A600B72566 /* ItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailViewController.h; sourceTree = "<group>"; };
+		722817B5183C97A600B72566 /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
+		722817B7183C9BC900B72566 /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
+		722817B8183C9BC900B72566 /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
 		72532652183B826000212F82 /* CategoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryDetailViewController.h; sourceTree = "<group>"; };
 		72532653183B826000212F82 /* CategoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryDetailViewController.m; sourceTree = "<group>"; };
 		7265041D183A581D00282738 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
@@ -569,6 +575,8 @@
 				72D5216C183A261C0095AC82 /* IndexViewController.m */,
 				72532652183B826000212F82 /* CategoryDetailViewController.h */,
 				72532653183B826000212F82 /* CategoryDetailViewController.m */,
+				722817B4183C97A600B72566 /* ItemDetailViewController.h */,
+				722817B5183C97A600B72566 /* ItemDetailViewController.m */,
 				72281776183C462400B72566 /* MyCell.h */,
 				72281777183C462400B72566 /* MyCell.m */,
 			);
@@ -600,6 +608,8 @@
 		D2095B88183BA187006C8880 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				722817B7183C9BC900B72566 /* SearchResultViewController.h */,
+				722817B8183C9BC900B72566 /* SearchResultViewController.m */,
 				D29CBA35183B3FAA0035DCC2 /* STSearchViewController.h */,
 				D29CBA36183B3FAA0035DCC2 /* STSearchViewController.m */,
 			);
@@ -804,11 +814,13 @@
 			files = (
 				D21CBBB7183C607700A1B88D /* SDWebImageDownloader.m in Sources */,
 				72D52176183A44520095AC82 /* DDMenuController.m in Sources */,
+				722817B6183C97A600B72566 /* ItemDetailViewController.m in Sources */,
 				72D520AE183A22E80095AC82 /* main.m in Sources */,
 				72532654183B826000212F82 /* CategoryDetailViewController.m in Sources */,
 				D29CBA4C183B65640035DCC2 /* FMDatabase.m in Sources */,
 				D29CBA34183B3F860035DCC2 /* STBaseViewController.m in Sources */,
 				72D520B2183A22E80095AC82 /* AppDelegate.m in Sources */,
+				722817B9183C9BC900B72566 /* SearchResultViewController.m in Sources */,
 				D29CBA4D183B65640035DCC2 /* FMDatabaseAdditions.m in Sources */,
 				D29CBA3E183B644D0035DCC2 /* STDataHelper.m in Sources */,
 				D21CBBBA183C607700A1B88D /* UIButton+WebCache.m in Sources */,

@@ -8,6 +8,6 @@
 
 #import "STBaseViewController.h"
 
-@interface STSearchViewController : STBaseViewController
+@interface STSearchViewController : STBaseViewController <UITextFieldDelegate>
 
 @end
