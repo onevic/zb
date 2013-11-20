@@ -78,7 +78,7 @@
         /*存本地*/
         /*删除原来的数据*/
         NSUserDefaults *userDefautls = [NSUserDefaults standardUserDefaults];
-        NSMutableArray *items = [userDefautls objectForKey:@"Item"];
+        NSMutableArray *items = [[userDefautls objectForKey:@"Item"] mutableCopy];
         if (items)
         {
             [items removeAllObjects];
@@ -106,7 +106,7 @@
             NSLog(@"%@", rootDict);
             NSArray *list = [rootDict objectForKey:@"List"];
             NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-            NSMutableArray *items = [[userDefaults objectForKey:@"Item"] copy];
+            NSMutableArray *items = [[userDefaults objectForKey:@"Item"] mutableCopy];
             if (items)
             {
                 [items removeAllObjects];

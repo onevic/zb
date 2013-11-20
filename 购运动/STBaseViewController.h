@@ -17,4 +17,5 @@
 @property (nonatomic, strong) UIImageView *navBar;
 - (void)showNavigationBar:(BOOL)show animate:(BOOL)animate;
 - (void)addMenuButton;
+- (void)addBackButton;
 @end

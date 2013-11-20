@@ -55,6 +55,20 @@
 }
 
 #pragma - mark 事件响应
+- (void)addBackButton
+{
+    // NavigationController返回按钮
+    UIButton *navBackBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    navBackBtn.frame = CGRectMake(20, 13, 10, 18);
+    navBackBtn.backgroundColor = [UIColor clearColor];
+    [navBackBtn setImage:[UIImage imageNamed:@"nav_back.png"] forState:UIControlStateNormal];
+    [navBackBtn addTarget:self action:@selector(backCategoryDetail) forControlEvents:UIControlEventTouchUpInside];
+    [_navBar addSubview:navBackBtn];
+}
+- (void)backCategoryDetail
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)addMenuButton
 {

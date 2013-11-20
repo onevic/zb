@@ -36,7 +36,7 @@
 
 - (void)createUI
 {
-
+    [self addBackButton];
     
     // 选项按钮
     UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, 320, 43)];
@@ -60,8 +60,8 @@
     btn4.frame = CGRectMake(240, 0, 80, 40);
     [topView addSubview:btn4];
     
-    
     _tableView.frame = CGRectMake(0, 43, 320, kScreenHeight-87-20);
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
@@ -69,6 +69,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailCompleted) name:kNotifyHomeLoadCategoryDetailCompleted object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailFailed) name:kNotifyHomeLoadCategoryDetailFailed object:nil];
 }
+
+
 
 #pragma mark - 下载回调
 - (void)loadCategoryDetailCompleted

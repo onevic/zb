@@ -14,7 +14,7 @@
 @property (strong, nonatomic) UIImageView *imageView;
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *priceLabel;
-@property (strong, nonatomic) UIImageView *favouriteImageView;
+@property (strong, nonatomic) UIButton *favouriteBtn;
 
 - (void)layoutWithItem:(STModelItem *)item;
 @end
