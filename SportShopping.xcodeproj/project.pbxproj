@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72281778183C462400B72566 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72281777183C462400B72566 /* MyCell.m */; };
 		72532654183B826000212F82 /* CategoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72532653183B826000212F82 /* CategoryDetailViewController.m */; };
 		7265041F183A581E00282738 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265041E183A581D00282738 /* MenuCell.m */; };
 		72D520A2183A22E80095AC82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D520A1183A22E80095AC82 /* UIKit.framework */; };
@@ -116,6 +117,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72281776183C462400B72566 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		72281777183C462400B72566 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		72532652183B826000212F82 /* CategoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryDetailViewController.h; sourceTree = "<group>"; };
 		72532653183B826000212F82 /* CategoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryDetailViewController.m; sourceTree = "<group>"; };
 		7265041D183A581D00282738 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
@@ -540,6 +543,8 @@
 				72532653183B826000212F82 /* CategoryDetailViewController.m */,
 				72D5216B183A261C0095AC82 /* IndexViewController.h */,
 				72D5216C183A261C0095AC82 /* IndexViewController.m */,
+				72281776183C462400B72566 /* MyCell.h */,
+				72281777183C462400B72566 /* MyCell.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -759,6 +764,7 @@
 				D29CBA58183B7B690035DCC2 /* STModelCategory.m in Sources */,
 				D29CBA4E183B65640035DCC2 /* FMDatabasePool.m in Sources */,
 				72D5216D183A261C0095AC82 /* IndexViewController.m in Sources */,
+				72281778183C462400B72566 /* MyCell.m in Sources */,
 				D29CBA4F183B65640035DCC2 /* FMDatabaseQueue.m in Sources */,
 				D29CBA37183B3FAA0035DCC2 /* STSearchViewController.m in Sources */,
 				72D52170183A26240095AC82 /* LeftViewController.m in Sources */,
