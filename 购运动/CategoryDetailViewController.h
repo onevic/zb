@@ -9,7 +9,7 @@
 #import "STBaseViewController.h"
 
 @class STModelCategory;
-@interface CategoryDetailViewController : STBaseViewController
+@interface CategoryDetailViewController : STBaseViewController <UITableViewDataSource,UITableViewDelegate>
 {
     STModelCategory *_cate;
 }
