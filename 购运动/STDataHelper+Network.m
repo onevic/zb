@@ -179,8 +179,11 @@
 @implementation STDataHelper (Search)
 - (void)searchWithKeyword:(NSString *)keyword
 {
+    
     NSString *urlString = kServer@"get_search.php?item_name=";
     urlString = [NSString stringWithFormat:@"%@%@", urlString, keyword];
+    urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"%@", urlString);
     _searchFetchNetworkDataBlockOperation = [NSBlockOperation blockOperationWithBlock:^{
         NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
         if (jsonData)
