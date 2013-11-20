@@ -186,7 +186,7 @@
         if (jsonData)
         {
             NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
-            NSLog(@"%@", rootDict);
+
             NSArray *list = [rootDict objectForKey:@"List"];
             NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
             NSMutableArray *items = [[userDefaults objectForKey:@"Item"] mutableCopy];
@@ -205,5 +205,6 @@
             [[NSNotificationCenter defaultCenter] postNotificationName:kNotifySearchWithKeywordFailed object:nil];
         }
     }];
+    [_operationQueue addOperation:_searchFetchNetworkDataBlockOperation];
 }
 @end
