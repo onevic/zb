@@ -12,6 +12,7 @@
 #import "DDMenuController.h"
 #import "STDataHelper+Network.h"
 #import "STModelCategory.h"
+#import "CategoryDetailViewController.h"
 
 @interface IndexViewController ()
 
@@ -172,7 +173,7 @@
      */
     NSArray *namesArray = @[@"", @"运动鞋", @"运动服", @"运动包配", @"运动品牌", @"户外", @"户外品牌", @"健身用品", @"健身品牌"];
     NSString *touchName = [namesArray objectAtIndex:button.tag];
-    NSLog(@"touchName:%@", touchName);
+//    NSLog(@"touchName:%@", touchName);
     
     /*拿到选中的分类*/
     STModelCategory *seletedCategory;
@@ -195,7 +196,10 @@
             break;
         }
     }
-
+    NSLog(@"touchName:%@", seletedCategory.categoryName);
+    CategoryDetailViewController *cateDetails = [[CategoryDetailViewController alloc] init];
+    cateDetails.cate = seletedCategory;
+    [self.navigationController pushViewController:cateDetails animated:YES];
 }
 
 #pragma - mark 下载回调

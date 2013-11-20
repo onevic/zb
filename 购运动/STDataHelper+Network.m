@@ -58,8 +58,13 @@
  */
 - (void)homeLoadCategoryDetail:(STModelCategory *)cate
 {
+    //#define kServer @"http://192.168.88.8/app/taobao/api/"
+    ///get_list.php?cate_id=2733
+    NSString *urlString = kServer@"get_list.php?cate_id=";
+    urlString = [NSString stringWithFormat:@"%@%@", urlString, cate.categoryId];
+    NSLog(@"urlString:%@", urlString);
     _homeLoadCategoryDetailsBlockOperation = [NSBlockOperation blockOperationWithBlock:^{
-        NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@""]];
+        NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
         if (jsonData)
         {
             NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
@@ -67,7 +72,13 @@
 
             /*存本地*/
             NSUserDefaults *userDefautls = [NSUserDefaults standardUserDefaults];
-            [userDefautls setObject:list forKey:@"Item"];
+            NSMutableArray *items = [userDefautls objectForKey:@"Item"];
+            if (items)
+            {
+                [items removeAllObjects];
+            }
+            [items addObjectsFromArray:list];
+            [userDefautls setObject:items forKey:@"Item"];
             [userDefautls synchronize];
             
             _homeLoadCategoryDetailsBlockOperation = nil;
@@ -77,6 +88,7 @@
             [[NSNotificationCenter defaultCenter] postNotificationName:kNotifyHomeLoadCategoryDetailFailed object:nil];
         }
     }];
+    [_operationQueue addOperation:_homeFetchNetworkDataBlockOperation];
 }
 @end
 

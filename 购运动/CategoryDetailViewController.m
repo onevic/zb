@@ -21,22 +21,14 @@
     UITableView *_tableView;
 }
 
-- (id)initWithCategory:(STModelCategory *)cate
-{
-    if (self = [super init])
-    {
-        _cate = [cate copy];
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     _allItems = [[NSMutableArray alloc] init];
     /*加载数据*/
     [[STDataHelper sharedInstance] homeLoadCategoryDetail:_cate];
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailCompleted) name:kNotifyHomeLoadCategoryDetailCompleted object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailFailed) name:kNotifyHomeLoadCategoryDetailFailed object:nil];
     
     _tableView = [[UITableView alloc] init];
     [self createUI];
@@ -67,7 +59,7 @@
     [topView addSubview:btn4];
     
     
-    _tableView.frame = CGRectMake(0, 87, 320, self.view.frame.size.height-87);
+    _tableView.frame = CGRectMake(0, 44, 320, self.view.frame.size.height-44);
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
@@ -107,7 +99,7 @@
 
 - (void)loadCategoryDetailFailed
 {
-    
+    NSLog(@"failed");
 }
 
 #pragma mark tableView

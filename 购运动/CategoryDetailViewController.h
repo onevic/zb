@@ -14,6 +14,6 @@
     STModelCategory *_cate;
     NSMutableArray *_allItems;
 }
-- (id)initWithCategory:(STModelCategory *)cate;
+@property (nonatomic, strong) STModelCategory *cate;
 
 @end
