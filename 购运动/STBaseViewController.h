@@ -13,8 +13,8 @@
     BOOL _isAdjusted;
     UIImageView *_navBar;
     BOOL _isNavBarShowing;
-    BOOL _isNavBarAdjusted;
 }
 @property (nonatomic, strong) UIImageView *navBar;
-- (void)showNavigationBar:(BOOL)show;
+- (void)showNavigationBar:(BOOL)show animate:(BOOL)animate;
+- (void)addMenuButton;
 @end

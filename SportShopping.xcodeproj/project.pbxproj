@@ -565,10 +565,10 @@
 		D2095B85183BA164006C8880 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				72532652183B826000212F82 /* CategoryDetailViewController.h */,
-				72532653183B826000212F82 /* CategoryDetailViewController.m */,
 				72D5216B183A261C0095AC82 /* IndexViewController.h */,
 				72D5216C183A261C0095AC82 /* IndexViewController.m */,
+				72532652183B826000212F82 /* CategoryDetailViewController.h */,
+				72532653183B826000212F82 /* CategoryDetailViewController.m */,
 				72281776183C462400B72566 /* MyCell.h */,
 				72281777183C462400B72566 /* MyCell.m */,
 			);

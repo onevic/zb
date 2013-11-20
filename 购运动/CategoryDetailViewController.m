@@ -36,6 +36,8 @@
 
 - (void)createUI
 {
+
+    
     // 选项按钮
     UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, 320, 43)];
     [self.view addSubview:topView];
