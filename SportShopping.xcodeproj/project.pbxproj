@@ -298,30 +298,14 @@
 				72D520B1183A22E80095AC82 /* AppDelegate.m */,
 				72D52173183A31160095AC82 /* DDMenuController.h */,
 				72D52174183A31160095AC82 /* DDMenuController.m */,
-				D29CBA2F183B3F860035DCC2 /* STBaseNavigationController.h */,
-				D29CBA30183B3F860035DCC2 /* STBaseNavigationController.m */,
-				D29CBA31183B3F860035DCC2 /* STBaseViewController.h */,
-				D29CBA32183B3F860035DCC2 /* STBaseViewController.m */,
-				D29CBA35183B3FAA0035DCC2 /* STSearchViewController.h */,
-				D29CBA36183B3FAA0035DCC2 /* STSearchViewController.m */,
-				D29CBA38183B644D0035DCC2 /* STDataHelper.h */,
-				D29CBA39183B644D0035DCC2 /* STDataHelper.m */,
-				D29CBA51183B6DE90035DCC2 /* STDataHelper+Network.h */,
-				D29CBA52183B6DE90035DCC2 /* STDataHelper+Network.m */,
-				D29CBA56183B7B690035DCC2 /* STModelCategory.h */,
-				D29CBA57183B7B690035DCC2 /* STModelCategory.m */,
-				D29CBA59183B7EFB0035DCC2 /* STModelItem.h */,
-				D29CBA5A183B7EFB0035DCC2 /* STModelItem.m */,
+				D2095B85183BA164006C8880 /* Home */,
+				D2095B89183BA1A3006C8880 /* Left */,
+				D2095B88183BA187006C8880 /* Search */,
+				D2095B87183BA17D006C8880 /* DataHelper */,
+				D2095B86183BA172006C8880 /* Model */,
+				D2095B84183BA15A006C8880 /* Base */,
 				D29CBA41183B65640035DCC2 /* FMDB */,
 				72D520A8183A22E80095AC82 /* Supporting Files */,
-				72D5216B183A261C0095AC82 /* IndexViewController.h */,
-				72D5216C183A261C0095AC82 /* IndexViewController.m */,
-				72D5216E183A26240095AC82 /* LeftViewController.h */,
-				72D5216F183A26240095AC82 /* LeftViewController.m */,
-				7265041D183A581D00282738 /* MenuCell.h */,
-				7265041E183A581D00282738 /* MenuCell.m */,
-				72532652183B826000212F82 /* CategoryDetailViewController.h */,
-				72532653183B826000212F82 /* CategoryDetailViewController.m */,
 			);
 			name = SportShopping;
 			path = "购运动";
@@ -536,6 +520,70 @@
 				72D5211A183A25980095AC82 /* 首页_14.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		D2095B84183BA15A006C8880 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D29CBA2F183B3F860035DCC2 /* STBaseNavigationController.h */,
+				D29CBA30183B3F860035DCC2 /* STBaseNavigationController.m */,
+				D29CBA31183B3F860035DCC2 /* STBaseViewController.h */,
+				D29CBA32183B3F860035DCC2 /* STBaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		D2095B85183BA164006C8880 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				72532652183B826000212F82 /* CategoryDetailViewController.h */,
+				72532653183B826000212F82 /* CategoryDetailViewController.m */,
+				72D5216B183A261C0095AC82 /* IndexViewController.h */,
+				72D5216C183A261C0095AC82 /* IndexViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		D2095B86183BA172006C8880 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D29CBA56183B7B690035DCC2 /* STModelCategory.h */,
+				D29CBA57183B7B690035DCC2 /* STModelCategory.m */,
+				D29CBA59183B7EFB0035DCC2 /* STModelItem.h */,
+				D29CBA5A183B7EFB0035DCC2 /* STModelItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D2095B87183BA17D006C8880 /* DataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D29CBA38183B644D0035DCC2 /* STDataHelper.h */,
+				D29CBA39183B644D0035DCC2 /* STDataHelper.m */,
+				D29CBA51183B6DE90035DCC2 /* STDataHelper+Network.h */,
+				D29CBA52183B6DE90035DCC2 /* STDataHelper+Network.m */,
+			);
+			name = DataHelper;
+			sourceTree = "<group>";
+		};
+		D2095B88183BA187006C8880 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D29CBA35183B3FAA0035DCC2 /* STSearchViewController.h */,
+				D29CBA36183B3FAA0035DCC2 /* STSearchViewController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		D2095B89183BA1A3006C8880 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				72D5216E183A26240095AC82 /* LeftViewController.h */,
+				72D5216F183A26240095AC82 /* LeftViewController.m */,
+				7265041D183A581D00282738 /* MenuCell.h */,
+				7265041E183A581D00282738 /* MenuCell.m */,
+			);
+			name = Left;
 			sourceTree = "<group>";
 		};
 		D29CBA41183B65640035DCC2 /* FMDB */ = {

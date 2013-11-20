@@ -25,6 +25,7 @@
     {
         _cate = [cate copy];
     }
+    return self;
 }
 
 - (void)viewDidLoad
@@ -32,6 +33,7 @@
     [super viewDidLoad];
     /*加载数据*/
     [[STDataHelper sharedInstance] homeLoadCategoryDetail:_cate];
+<<<<<<< HEAD
 //    [NSNotificationCenter defaultCenter] addObserver:<#(id)#> selector:<#(SEL)#> name:<#(NSString *)#> object:<#(id)#>
     
     _tableView = [[UITableView alloc] init];
@@ -67,6 +69,40 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
+=======
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailCompleted) name:kNotifyHomeLoadCategoryDetailCompleted object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailFailed) name:kNotifyHomeLoadCategoryDetailFailed object:nil];
+}
+
+#pragma mark - 下载回调
+- (void)loadCategoryDetailCompleted
+{
+    //            NSMutableArray *results = [[NSMutableArray alloc] init];
+    //            for (NSDictionary *dict in list) {
+    //                NSString *itemName = [dict objectForKey:@"name"];
+    //                NSString *itemFavs = [dict objectForKey:@"favs"];
+    //                NSString *itemPreviewUrl = [dict objectForKey:@"previewUrl"];
+    //                NSString *itemPrice = [dict objectForKey:@"price"];
+    //                NSString *itemUrl = [dict objectForKey:@"url"];
+    //                NSString *itemAct = [dict objectForKey:@"act"];
+    //                NSString *itemId = [dict objectForKey:@"ID"];
+    //
+    //                STModelItem *item = [[STModelItem alloc] init];
+    //                item.itemName = itemName;
+    //                item.itemFavs = itemFavs;
+    //                item.itemPreviewUrl = itemPreviewUrl;
+    //                item.itemPrice = itemPrice;
+    //                item.itemUrl = itemUrl;
+    //                item.itemAct = itemAct;
+    //                item.itemId = itemId;
+    //                [results addObject:item];
+    //            }
+}
+
+- (void)loadCategoryDetailFailed
+{
+    
+>>>>>>> 93f42372129448fee6e832e156ca08b3651e8bfb
 }
 
 #pragma mark tableView
