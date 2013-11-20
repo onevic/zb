@@ -24,18 +24,18 @@
         // Initialization code
         _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 80, 80)];
         [self.contentView addSubview:_imageView];
-        _imageView.backgroundColor = [UIColor redColor];
+        _imageView.backgroundColor = [UIColor grayColor];
         
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(110, 20, 170, 50)];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(110, 20, 190, 40)];
         _titleLabel.numberOfLines = 2;
+        _titleLabel.font = [UIFont boldSystemFontOfSize:14];
         [self.contentView addSubview:_titleLabel];
-        _titleLabel.backgroundColor = [UIColor cyanColor];
         
         _priceLabel = [[UILabel alloc] initWithFrame:CGRectMake(110, 100-24, 80, 24)];
         [self.contentView addSubview:_priceLabel];
-        _priceLabel.backgroundColor = [UIColor orangeColor];
+        _priceLabel.textColor = [UIColor redColor];
         
-        _favouriteImageView = [[UIImageView alloc] initWithFrame:CGRectMake(320-40-30, 100-25, 30, 25)];
+        _favouriteImageView = [[UIImageView alloc] initWithFrame:CGRectMake(320-20-30, 100-25, 30, 25)];
         [self.contentView addSubview:_favouriteImageView];
         _favouriteImageView.backgroundColor = [UIColor lightGrayColor];
     }
@@ -46,7 +46,7 @@
 {
     [_imageView setImageWithURL:[NSURL URLWithString:item.itemImage2]];
     _titleLabel.text = item.itemName;
-    _priceLabel.text = item.itemPrice;
+    _priceLabel.text = [NSString stringWithFormat:@"￥%@",item.itemPrice];
 }
 
 @end
