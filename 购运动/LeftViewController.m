@@ -12,6 +12,7 @@
 #import "DDMenuController.h"
 #import "AppDelegate.h"
 #import "STSearchViewController.h"
+#import "STBaseNavigationController.h"
 
 @interface LeftViewController ()
 
@@ -112,8 +113,10 @@
     if (indexPath.row == 1)
     {
         STSearchViewController *search = [[STSearchViewController alloc] init];
+        STBaseNavigationController *nav = [[STBaseNavigationController alloc] initWithRootViewController:search  ];
+        
         AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-        [appDelegate.ddmenu setRootController:search animated:YES];
+        [appDelegate.ddmenu setRootController:nav animated:YES];
     }
 }
 

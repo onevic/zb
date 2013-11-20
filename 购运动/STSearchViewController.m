@@ -7,6 +7,8 @@
 //
 
 #import "STSearchViewController.h"
+#import "SearchResultViewController.h"
+#import "STDataHelper+Network.h"
 
 @interface STSearchViewController ()
 
@@ -54,7 +56,16 @@
 
 - (void)goSearch
 {
-    
+    [_searchTextField resignFirstResponder];
+    NSLog(@"%@", _searchTextField.text);
+    if (_searchTextField.text == Nil || [_searchTextField.text isEqualToString:@""])
+    {
+        return;
+    }
+    [[STDataHelper sharedInstance] searchWithKeyword:_searchTextField.text];
+    /*推入搜索结果*/
+    SearchResultViewController *result = [[SearchResultViewController alloc] init];
+    [self.navigationController pushViewController:result animated:YES];
 }
 
 - (void)controlClick
@@ -67,6 +78,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [_searchTextField resignFirstResponder];
+    [self goSearch];
     return YES;
 }
 

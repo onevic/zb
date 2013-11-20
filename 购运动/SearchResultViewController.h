@@ -9,5 +9,7 @@
 #import "STBaseViewController.h"
 
 @interface SearchResultViewController : STBaseViewController <UITableViewDataSource,UITableViewDelegate>
-
+{
+    NSMutableArray *_resultsItems;
+}
 @end
