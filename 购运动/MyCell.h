@@ -10,4 +10,9 @@
 
 @interface MyCell : UITableViewCell
 
+@property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) UILabel *titleLabel;
+@property (strong, nonatomic) UILabel *priceLabel;
+@property (strong, nonatomic) UIImageView *favouriteImageView;
+
 @end
