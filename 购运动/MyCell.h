@@ -10,11 +10,14 @@
 
 @class STModelItem;
 @interface MyCell : UITableViewCell
-
+{
+    BOOL _isFav;
+}
 @property (strong, nonatomic) UIImageView *imageView;
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *priceLabel;
 @property (strong, nonatomic) UIButton *favouriteBtn;
 
+@property (nonatomic, strong) STModelItem *item;
 - (void)layoutWithItem:(STModelItem *)item;
 @end

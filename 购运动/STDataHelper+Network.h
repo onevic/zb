@@ -26,6 +26,9 @@
 - (void)homeLoadCategoryDetailCancel;
 
 - (void)addFavorite:(STModelItem *)item;
+- (void)removeFavorite:(STModelItem *)item;
+//- (NSMutableArray *)allFavoritesId;
+
 - (void)sortItemsByPrice;
 - (void)sortItemsBySold;
 - (void)sortItemsByRenQi;

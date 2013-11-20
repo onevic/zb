@@ -16,6 +16,8 @@
 @property (strong, nonatomic) UILabel *priceLabel;
 @property (strong, nonatomic) UIButton *payBtn;
 
+@property (strong, nonatomic) STModelItem *item;
 - (void)layoutWithItem:(STModelItem *)item;
+
 @end
 

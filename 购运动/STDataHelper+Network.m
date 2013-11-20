@@ -109,11 +109,53 @@
     /*拿到原来搜藏的id*/
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSMutableArray *favoritesArray = [userDefaults objectForKey:@"Favorite"];
-    if (!favoritesArray)
+    if (!favoritesArray || favoritesArray.count == 0)
     {
         favoritesArray = [[NSMutableArray alloc] init];
+        [favoritesArray addObject:item.itemId];
+    }else {
+        /*如果不存在就添加*/
+        BOOL isExist = NO;
+        for (NSString *myId in favoritesArray) {
+            if ([myId isEqualToString:item.itemId])
+            {
+                isExist = YES;
+                break;
+            }
+        }
+        if (!isExist)
+        {
+            [favoritesArray addObject:item.itemId];
+        }
     }
-    [favoritesArray addObject:item.itemId];
+    [userDefaults setObject:favoritesArray forKey:@"Favorite"];
+    [userDefaults synchronize];
+}
+
+- (void)removeFavorite:(STModelItem *)item
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *favoritesArray = [userDefaults objectForKey:@"Favorite"];
+    if (!favoritesArray || favoritesArray.count == 0)
+    {
+        
+    }else {
+        /*如果存在就删除*/
+        BOOL isExist = NO;
+        for (NSString *myId in favoritesArray) {
+            if ([myId isEqualToString:item.itemId])
+            {
+                isExist = YES;
+                break;
+            }
+        }
+        if (isExist)
+        {
+            [favoritesArray removeObject:item.itemId];
+        }
+    }
+    [userDefaults setObject:favoritesArray forKey:@"Favorite"];
+    [userDefaults synchronize];
 }
 
 - (void)sortItemsByPrice

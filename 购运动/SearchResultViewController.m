@@ -110,6 +110,11 @@
     if (cell == nil) {
         cell = [[SearchResultCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
+    if (_resultsItems.count != 0)
+    {
+        STModelItem *item = [_resultsItems objectAtIndex:indexPath.row];
+        [cell layoutWithItem:item];
+    }
     return cell;
 }
 

@@ -7,6 +7,8 @@
 //
 
 #import "SearchResultCell.h"
+#import "UIImageView+WebCache.h"
+#import "STModelItem.h"
 
 @implementation SearchResultCell
 
@@ -49,11 +51,13 @@
     return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+-(void)layoutWithItem:(STModelItem *)item
 {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    self.item = item;
+    
+    [_imageView setImageWithURL:[NSURL URLWithString:item.itemImage2]];
+    _titleLabel.text = item.itemName;
+    _priceLabel.text = item.itemPrice;
 }
 
 @end

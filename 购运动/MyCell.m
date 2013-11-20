@@ -58,9 +58,28 @@
 
 - (void)layoutWithItem:(STModelItem *)item
 {
+    self.item = item;
     [_imageView setImageWithURL:[NSURL URLWithString:item.itemImage2]];
     _titleLabel.text = item.itemName;
     _priceLabel.text = [NSString stringWithFormat:@"￥%@",item.itemPrice];
+}
+
+- (BOOL)isFavorite
+{
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *favoritesArray = [userdefaults objectForKey:@"Favorite"];
+    if (favoritesArray)
+    {
+        for (NSString *myid in favoritesArray) {
+            if ([myid isEqualToString:self.item.itemId])
+            {
+                _isFav = YES;
+                return YES;
+            }
+        }
+    }
+    _isFav = NO;
+    return NO;
 }
 
 @end
