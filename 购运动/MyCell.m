@@ -9,6 +9,7 @@
 #import "MyCell.h"
 #import "STModelItem.h"
 #import "UIImageView+WebCache.h"
+#import "STDataHelper+Network.h"
 
 @implementation MyCell
 
@@ -53,7 +54,14 @@
 
 - (void)favouriteBtnClicked
 {
-    
+    if (_isFav)
+    {
+        /*取消搜藏*/
+        [[STDataHelper sharedInstance] removeFavorite:self.item];
+    }else {
+        [[STDataHelper sharedInstance] addFavorite:self.item];
+    }
+    [self layoutWithItem:self.item];
 }
 
 - (void)layoutWithItem:(STModelItem *)item
@@ -62,6 +70,13 @@
     [_imageView setImageWithURL:[NSURL URLWithString:item.itemImage2]];
     _titleLabel.text = item.itemName;
     _priceLabel.text = [NSString stringWithFormat:@"￥%@",item.itemPrice];
+    if ([self isFavorite])
+    {
+        /*实心红心*/
+        [_favouriteBtn setImage:[UIImage imageNamed:@"运动鞋_52.png"] forState:UIControlStateNormal];
+    } else {
+        [_favouriteBtn setImage:[UIImage imageNamed:@"运动鞋_42.png"] forState:UIControlStateNormal];
+    }
 }
 
 - (BOOL)isFavorite

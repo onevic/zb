@@ -108,7 +108,7 @@
 {
     /*拿到原来搜藏的id*/
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableArray *favoritesArray = [userDefaults objectForKey:@"Favorite"];
+    NSMutableArray *favoritesArray = [[userDefaults objectForKey:@"Favorite"] mutableCopy];
     if (!favoritesArray || favoritesArray.count == 0)
     {
         favoritesArray = [[NSMutableArray alloc] init];
@@ -135,7 +135,7 @@
 - (void)removeFavorite:(STModelItem *)item
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableArray *favoritesArray = [userDefaults objectForKey:@"Favorite"];
+    NSMutableArray *favoritesArray = [[userDefaults objectForKey:@"Favorite"] mutableCopy];
     if (!favoritesArray || favoritesArray.count == 0)
     {
         
