@@ -106,8 +106,9 @@
     if (indexPath.row == 0)
     {
         IndexViewController *index = [[IndexViewController alloc] init];
+        STBaseNavigationController *nav = [[STBaseNavigationController alloc] initWithRootViewController:index];
         AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-        [appDelegate.ddmenu setRootController:index animated:YES];
+        [appDelegate.ddmenu setRootController:nav animated:YES];
     }
     
     if (indexPath.row == 1)

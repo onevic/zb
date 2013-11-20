@@ -37,6 +37,12 @@
     [self createUI];
 }
 
+- (void)backButtonClicked
+{
+    [super backButtonClicked];
+    [[STDataHelper sharedInstance] homeLoadCategoryDetailCancel];
+}
+
 - (void)createUI
 {
     [self addBackButton];

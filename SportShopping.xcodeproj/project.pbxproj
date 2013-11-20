@@ -111,6 +111,7 @@
 		D21CBBB9183C607700A1B88D /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CBBB0183C607700A1B88D /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D21CBBBA183C607700A1B88D /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CBBB2183C607700A1B88D /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D21CBBBB183C607700A1B88D /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D21CBBB4183C607700A1B88D /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D2506784183CC16A00E57393 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D2506783183CC16A00E57393 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D29CBA33183B3F860035DCC2 /* STBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA30183B3F860035DCC2 /* STBaseNavigationController.m */; };
 		D29CBA34183B3F860035DCC2 /* STBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA32183B3F860035DCC2 /* STBaseViewController.m */; };
 		D29CBA37183B3FAA0035DCC2 /* STSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CBA36183B3FAA0035DCC2 /* STSearchViewController.m */; };
@@ -255,6 +256,8 @@
 		D21CBBB2183C607700A1B88D /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		D21CBBB3183C607700A1B88D /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		D21CBBB4183C607700A1B88D /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		D2506782183CC16A00E57393 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		D2506783183CC16A00E57393 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
 		D29CBA2F183B3F860035DCC2 /* STBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBaseNavigationController.h; sourceTree = "<group>"; };
 		D29CBA30183B3F860035DCC2 /* STBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBaseNavigationController.m; sourceTree = "<group>"; };
 		D29CBA31183B3F860035DCC2 /* STBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBaseViewController.h; sourceTree = "<group>"; };
@@ -330,6 +333,8 @@
 		72D520A7183A22E80095AC82 /* SportShopping */ = {
 			isa = PBXGroup;
 			children = (
+				D2506782183CC16A00E57393 /* NSString+URLEncoding.h */,
+				D2506783183CC16A00E57393 /* NSString+URLEncoding.m */,
 				72D520BE183A25980095AC82 /* Images */,
 				72D520B0183A22E80095AC82 /* AppDelegate.h */,
 				72D520B1183A22E80095AC82 /* AppDelegate.m */,
@@ -837,6 +842,7 @@
 				D29CBA4E183B65640035DCC2 /* FMDatabasePool.m in Sources */,
 				72D5216D183A261C0095AC82 /* IndexViewController.m in Sources */,
 				D21CBBB5183C607700A1B88D /* SDImageCache.m in Sources */,
+				D2506784183CC16A00E57393 /* NSString+URLEncoding.m in Sources */,
 				D21CBBB9183C607700A1B88D /* SDWebImagePrefetcher.m in Sources */,
 				72281778183C462400B72566 /* MyCell.m in Sources */,
 				D29CBA4F183B65640035DCC2 /* FMDatabaseQueue.m in Sources */,

@@ -21,7 +21,10 @@
 @interface STDataHelper (Home)
 - (void)homeLoadCategory; //加载分类
 - (void)homeFetchNetworkDataCancel;
+
 - (void)homeLoadCategoryDetail:(STModelCategory *)cate; //加载某个分类的详细信息
+- (void)homeLoadCategoryDetailCancel;
+
 - (void)addFavorite:(STModelItem *)item;
 - (void)sortItemsByPrice;
 - (void)sortItemsBySold;

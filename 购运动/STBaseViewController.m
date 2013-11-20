@@ -62,10 +62,10 @@
     navBackBtn.frame = CGRectMake(20, 13, 10, 18);
     navBackBtn.backgroundColor = [UIColor clearColor];
     [navBackBtn setImage:[UIImage imageNamed:@"nav_back.png"] forState:UIControlStateNormal];
-    [navBackBtn addTarget:self action:@selector(backCategoryDetail) forControlEvents:UIControlEventTouchUpInside];
+    [navBackBtn addTarget:self action:@selector(backButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     [_navBar addSubview:navBackBtn];
 }
-- (void)backCategoryDetail
+- (void)backButtonClicked
 {
     [self.navigationController popViewControllerAnimated:YES];
 }

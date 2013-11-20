@@ -7,6 +7,7 @@
 //
 #import "STModelCategory.h"
 #import "STModelItem.h"
+#import "NSString+URLEncoding.h"
 
 #define kServer @"http://192.168.88.8/app/taobao/api/"
 #define kSportShopping kServer@"get_cateall.php?app_name=sportShopping"
@@ -96,6 +97,13 @@
     [_operationQueue addOperation:_homeLoadCategoryDetailsBlockOperation];
 }
 
+- (void)homeLoadCategoryDetailCancel
+{
+    if (_homeLoadCategoryDetailsBlockOperation) {
+        [_homeLoadCategoryDetailsBlockOperation cancel];
+    }
+}
+
 - (void)addFavorite:(STModelItem *)item
 {
     /*拿到原来搜藏的id*/
@@ -181,8 +189,7 @@
 {
     
     NSString *urlString = kServer@"get_search.php?item_name=";
-    urlString = [NSString stringWithFormat:@"%@%@", urlString, keyword];
-    urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    urlString = [NSString stringWithFormat:@"%@%@", urlString, [keyword urlEncodeString]];
     NSLog(@"%@", urlString);
     _searchFetchNetworkDataBlockOperation = [NSBlockOperation blockOperationWithBlock:^{
         NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
