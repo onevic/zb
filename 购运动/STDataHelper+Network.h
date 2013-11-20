@@ -13,6 +13,7 @@
 @end
 
 @class STModelCategory;
+@class STModelItem;
 #define kNotifyHomeFetchNetworkDataCompleted @"kNotifyHomeFetchNetworkDataCompleted"
 #define kNotifyHomeFetchNetworkDataFailed @"kNotifyHomeFetchNetworkDataFailed"
 #define kNotifyHomeLoadCategoryDetailCompleted @"kNotifyHomeLoadCategoryDetailCompleted"
@@ -21,6 +22,10 @@
 - (void)homeLoadCategory; //加载分类
 - (void)homeFetchNetworkDataCancel;
 - (void)homeLoadCategoryDetail:(STModelCategory *)cate; //加载某个分类的详细信息
+- (void)addFavorite:(STModelItem *)item;
+- (void)sortItemsByPrice;
+- (void)sortItemsBySold;
+- (void)sortItemsByRenQi;
 @end
 
 #define kNotifySearchWithKeywordCompleted @"kNotifySearchWithKeywordCompleted"

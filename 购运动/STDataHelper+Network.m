@@ -14,6 +14,10 @@
 #import "STDataHelper+Network.h"
 
 @implementation STDataHelper (Network)
+
+@end
+
+@implementation STDataHelper (Home)
 - (void)homeLoadCategory
 {
     _homeFetchNetworkDataBlockOperation = [NSBlockOperation blockOperationWithBlock:^{
@@ -64,7 +68,7 @@
         NSString *urlString = kServer@"get_list.php?cate_id=";
         for (NSString *subId in cate.categorySubIds) {
             NSString *mySubIdString = [NSString stringWithFormat:@"%@%@", urlString, subId];
-//            NSLog(@"mysubidstring:%@", mySubIdString);
+            //            NSLog(@"mysubidstring:%@", mySubIdString);
             
             NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:mySubIdString]];
             if (jsonData)
@@ -91,6 +95,85 @@
     }];
     [_operationQueue addOperation:_homeLoadCategoryDetailsBlockOperation];
 }
+
+- (void)addFavorite:(STModelItem *)item
+{
+    /*拿到原来搜藏的id*/
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *favoritesArray = [userDefaults objectForKey:@"Favorite"];
+    if (!favoritesArray)
+    {
+        favoritesArray = [[NSMutableArray alloc] init];
+    }
+    [favoritesArray addObject:item.itemId];
+}
+
+- (void)sortItemsByPrice
+{
+    /*从低到高*/
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *itemsArray = [userdefaults objectForKey:@"Item"];
+    for (int i=0;i<=itemsArray.count-1;i++)
+    {
+        BOOL isOk = YES;
+        for (int j=itemsArray.count-1;j>=i+1;j--)
+        {
+            STModelItem *item0 = [itemsArray objectAtIndex:j-1];
+            STModelItem *item1 = [itemsArray objectAtIndex:j];
+            if (item0.itemPrice.floatValue > item1.itemPrice.floatValue)
+            {
+                [itemsArray exchangeObjectAtIndex:i withObjectAtIndex:j];
+                isOk = NO;
+            }
+        }
+        if (isOk) break;
+    }
+}
+
+- (void)sortItemsBySold
+{
+    /*从高到低*/
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *itemsArray = [userdefaults objectForKey:@"Item"];
+    for (int i=0;i<=itemsArray.count-1;i++)
+    {
+        BOOL isOk = YES;
+        for (int j=itemsArray.count-1;j>=i+1;j--)
+        {
+            STModelItem *item0 = [itemsArray objectAtIndex:j-1];
+            STModelItem *item1 = [itemsArray objectAtIndex:j];
+            if (item0.itemAct.floatValue < item1.itemAct.floatValue)
+            {
+                [itemsArray exchangeObjectAtIndex:i withObjectAtIndex:j];
+                isOk = NO;
+            }
+        }
+        if (isOk) break;
+    }
+}
+
+- (void)sortItemsByRenQi
+{
+    /*从高到低*/
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *itemsArray = [userdefaults objectForKey:@"Item"];
+    for (int i=0;i<=itemsArray.count-1;i++)
+    {
+        BOOL isOk = YES;
+        for (int j=itemsArray.count-1;j>=i+1;j--)
+        {
+            STModelItem *item0 = [itemsArray objectAtIndex:j-1];
+            STModelItem *item1 = [itemsArray objectAtIndex:j];
+            if (item0.itemAct.floatValue < item1.itemAct.floatValue)
+            {
+                [itemsArray exchangeObjectAtIndex:i withObjectAtIndex:j];
+                isOk = NO;
+            }
+        }
+        if (isOk) break;
+    }
+}
+
 @end
 
 @implementation STDataHelper (Search)
