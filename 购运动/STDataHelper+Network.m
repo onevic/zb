@@ -158,6 +158,64 @@
     [userDefaults synchronize];
 }
 
+- (NSMutableArray *)allMyFavoriteItems
+{
+    __block NSMutableArray *results = [[NSMutableArray alloc] init];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+        NSMutableArray *favItemDictsArray = [[NSMutableArray alloc] init];
+        for (NSDictionary *itemDict in [userdefaults objectForKey:@"Item"]) {
+            if ([self isItemDictFavorited:itemDict])
+            {
+                [favItemDictsArray addObject:itemDict];
+            }
+        }
+        /*转化成对象*/
+        
+        for (NSDictionary *dict in favItemDictsArray) {
+            NSString *itemName = [dict objectForKey:@"name"];
+            NSString *itemFavs = [dict objectForKey:@"favs"];
+            NSString *itemPreviewUrl = [dict objectForKey:@"previewUrl"];
+            NSString *itemPrice = [dict objectForKey:@"price"];
+            NSString *itemUrl = [dict objectForKey:@"url"];
+            NSString *itemAct = [dict objectForKey:@"act"];
+            NSString *itemId = [dict objectForKey:@"ID"];
+            NSString *itemImage2 = [dict objectForKey:@"img2"];
+            
+            NSLog(@"%@", itemName);
+            
+            STModelItem *item = [[STModelItem alloc] init];
+            item.itemName = itemName;
+            item.itemFavs = itemFavs;
+            item.itemPreviewUrl = itemPreviewUrl;
+            item.itemPrice = itemPrice;
+            item.itemUrl = itemUrl;
+            item.itemAct = itemAct;
+            item.itemId = itemId;
+            item.itemImage2 = itemImage2;
+            
+            [results addObject:item];
+        }
+    });
+    if (results.count != 0)
+        return results;
+
+    return nil;
+}
+
+- (BOOL)isItemDictFavorited:(NSDictionary *)itemDict
+{
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    NSArray *favIdsArray = [userdefaults objectForKey:@"Favorite"];
+    for (NSString *myid in favIdsArray) {
+        if ([myid isEqualToString:[itemDict objectForKey:@"ID"]])
+        {
+            return YES;
+        }
+    }
+    return NO;
+}
+
 - (void)sortItemsByPrice
 {
     /*从低到高*/
@@ -205,23 +263,6 @@
 - (void)sortItemsByRenQi
 {
     /*从高到低*/
-    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableArray *itemsArray = [userdefaults objectForKey:@"Item"];
-    for (int i=0;i<=itemsArray.count-1;i++)
-    {
-        BOOL isOk = YES;
-        for (int j=itemsArray.count-1;j>=i+1;j--)
-        {
-            STModelItem *item0 = [itemsArray objectAtIndex:j-1];
-            STModelItem *item1 = [itemsArray objectAtIndex:j];
-            if (item0.itemAct.floatValue < item1.itemAct.floatValue)
-            {
-                [itemsArray exchangeObjectAtIndex:i withObjectAtIndex:j];
-                isOk = NO;
-            }
-        }
-        if (isOk) break;
-    }
 }
 
 @end

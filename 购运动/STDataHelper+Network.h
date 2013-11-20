@@ -29,6 +29,8 @@
 - (void)removeFavorite:(STModelItem *)item;
 //- (NSMutableArray *)allFavoritesId;
 
+- (NSMutableArray *)allMyFavoriteItems;
+
 - (void)sortItemsByPrice;
 - (void)sortItemsBySold;
 - (void)sortItemsByRenQi;
