@@ -11,4 +11,5 @@
 @interface STModelCategory : NSObject
 @property (nonatomic, strong) NSString *categoryName;
 @property (nonatomic, strong) NSString *categoryId;
+@property (nonatomic, strong) NSMutableArray *categorySubIds;
 @end

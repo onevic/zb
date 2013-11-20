@@ -15,5 +15,6 @@
 @property (nonatomic, strong) NSString *itemPrice;
 @property (nonatomic, strong) NSString *itemUrl;
 @property (nonatomic, strong) NSString *itemAct; //销量
-@property (nonatomic, strong) NSString *itemId; 
+@property (nonatomic, strong) NSString *itemId;
+@property (nonatomic, strong) NSString *itemImage2;
 @end

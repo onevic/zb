@@ -23,7 +23,8 @@
     if (self = [super init])
     {
         _operationQueue = [[NSOperationQueue alloc] init];
-
+        _operationQueue.maxConcurrentOperationCount = 10;
+        
         _homeFetchNetworkDataBlockOperation = nil;
         _searchFetchNetworkDataBlockOperation = nil;
         _homeLoadCategoryDetailsBlockOperation = nil;

@@ -10,4 +10,13 @@
 
 @implementation STModelCategory
 
+- (id)init
+{
+    if (self = [super init])
+    {
+        
+        _categorySubIds = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
 @end

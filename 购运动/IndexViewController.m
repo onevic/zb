@@ -184,9 +184,16 @@
         NSString *cateName = [dict objectForKey:@"Name"];
         NSString *cateId = [dict objectForKey:@"ID"];
         
+        
         STModelCategory *cate = [[STModelCategory alloc] init];
         cate.categoryName = cateName;
         cate.categoryId = cateId;
+        
+        NSArray *subList = [dict objectForKey:@"List"];
+        for (NSDictionary *subdict in subList) {
+            NSString *subId = [subdict objectForKey:@"ID"];
+            [cate.categorySubIds addObject:subId];
+        }
         [results addObject:cate];
     }
     for (STModelCategory *cate in results) {

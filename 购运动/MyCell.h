@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class STModelItem;
 @interface MyCell : UITableViewCell
 
 @property (strong, nonatomic) UIImageView *imageView;
@@ -15,4 +16,5 @@
 @property (strong, nonatomic) UILabel *priceLabel;
 @property (strong, nonatomic) UIImageView *favouriteImageView;
 
+- (void)layoutWithItem:(STModelItem *)item;
 @end
