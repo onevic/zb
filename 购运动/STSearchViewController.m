@@ -29,6 +29,7 @@
     titleLabel.font = [UIFont boldSystemFontOfSize:18];
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.center = self.navBar.center;
+    titleLabel.backgroundColor = [UIColor clearColor];
     [self.navBar addSubview:titleLabel];
     
     // 搜索条

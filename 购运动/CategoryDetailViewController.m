@@ -31,7 +31,6 @@
     [self createUI];
 
     _allItems = [[NSMutableArray alloc] init];
-    self.cate = [[STModelCategory alloc] init];
     
     /*加载数据*/
     [[STDataHelper sharedInstance] homeLoadCategoryDetail:_cate];
@@ -60,6 +59,7 @@
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.font = [UIFont boldSystemFontOfSize:18];
     _titleLabel.textColor = [UIColor whiteColor];
+    _titleLabel.backgroundColor = [UIColor clearColor];
     [_navBar addSubview:_titleLabel];
     
     // 选项按钮

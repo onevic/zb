@@ -998,7 +998,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "购运动/SportShopping-Prefix.pch";
 				INFOPLIST_FILE = "购运动/SportShopping-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = SportShopping;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1010,7 +1010,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "购运动/SportShopping-Prefix.pch";
 				INFOPLIST_FILE = "购运动/SportShopping-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = SportShopping;
 				WRAPPER_EXTENSION = app;
 			};

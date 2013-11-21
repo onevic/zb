@@ -65,6 +65,7 @@
     _titleLabel.text = @"户外运动";
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.font = [UIFont boldSystemFontOfSize:18];
+    _titleLabel.backgroundColor = [UIColor clearColor];
     _titleLabel.textColor = [UIColor whiteColor];
     [self.navBar addSubview:_titleLabel];
 }

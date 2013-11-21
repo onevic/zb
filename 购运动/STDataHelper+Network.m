@@ -22,6 +22,7 @@
 - (void)homeLoadCategory
 {
     _homeFetchNetworkDataBlockOperation = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"%@", kSportShopping);
         NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:kSportShopping]];
         if (jsonData)
         {
@@ -70,6 +71,7 @@
         NSString *urlString = kServer@"get_list.php?cate_id=";
         for (NSString *subId in cate.categorySubIds) {
             NSString *mySubIdString = [NSString stringWithFormat:@"%@%@", urlString, subId];
+            NSLog(@"%@", mySubIdString);
             //            NSLog(@"mysubidstring:%@", mySubIdString);
             
             NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:mySubIdString]];

@@ -34,6 +34,7 @@
     titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.font = [UIFont boldSystemFontOfSize:18];
     titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.backgroundColor =[UIColor clearColor];
     [_navBar addSubview:titleLabel];
     
     
