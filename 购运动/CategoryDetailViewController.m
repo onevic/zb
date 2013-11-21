@@ -136,7 +136,7 @@
     if (selected == 0)
     {
         //相关
-        
+        [[STDataHelper sharedInstance] sortItemsByRelates];
         
     }else if (selected == 1)
     {

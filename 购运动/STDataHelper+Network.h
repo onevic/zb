@@ -32,6 +32,7 @@
 - (NSMutableArray *)allMyFavoriteItems;
 
 #define kNotifySortCompleted @"kNotifySortCompleted"
+- (void)sortItemsByRelates;
 - (void)sortItemsByPrice;
 - (void)sortItemsBySold;
 - (void)sortItemsByRenQi;

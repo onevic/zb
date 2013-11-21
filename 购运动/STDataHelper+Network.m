@@ -220,7 +220,10 @@
 
 - (void)sortItemsByRelates
 {
-    
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    [userdefaults setObject:_originRelatesArray forKey:@"Item"];
+    [userdefaults synchronize];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNotifySortCompleted object:Nil];
 }
 
 - (void)sortItemsByPrice
