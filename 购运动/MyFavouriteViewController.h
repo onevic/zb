@@ -9,5 +9,8 @@
 #import "STBaseViewController.h"
 
 @interface MyFavouriteViewController : STBaseViewController <UITableViewDataSource,UITableViewDelegate>
-
+{
+    NSMutableArray *_allMyFavorites;
+    
+}
 @end

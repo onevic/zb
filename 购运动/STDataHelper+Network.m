@@ -162,43 +162,44 @@
 
 - (NSMutableArray *)allMyFavoriteItems
 {
-    __block NSMutableArray *results = [[NSMutableArray alloc] init];
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
-        NSMutableArray *favItemDictsArray = [[NSMutableArray alloc] init];
-        for (NSDictionary *itemDict in [userdefaults objectForKey:@"Item"]) {
-            if ([self isItemDictFavorited:itemDict])
-            {
-                [favItemDictsArray addObject:itemDict];
-            }
+    NSMutableArray *results = [[NSMutableArray alloc] init];
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        
+//    });
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *favItemDictsArray = [[NSMutableArray alloc] init];
+    for (NSDictionary *itemDict in [userdefaults objectForKey:@"Item"]) {
+        if ([self isItemDictFavorited:itemDict])
+        {
+            [favItemDictsArray addObject:itemDict];
         }
-        /*转化成对象*/
+    }
+    /*转化成对象*/
+    
+    for (NSDictionary *dict in favItemDictsArray) {
+        NSString *itemName = [dict objectForKey:@"name"];
+        NSString *itemFavs = [dict objectForKey:@"favs"];
+        NSString *itemPreviewUrl = [dict objectForKey:@"previewUrl"];
+        NSString *itemPrice = [dict objectForKey:@"price"];
+        NSString *itemUrl = [dict objectForKey:@"url"];
+        NSString *itemAct = [dict objectForKey:@"act"];
+        NSString *itemId = [dict objectForKey:@"ID"];
+        NSString *itemImage2 = [dict objectForKey:@"img2"];
         
-        for (NSDictionary *dict in favItemDictsArray) {
-            NSString *itemName = [dict objectForKey:@"name"];
-            NSString *itemFavs = [dict objectForKey:@"favs"];
-            NSString *itemPreviewUrl = [dict objectForKey:@"previewUrl"];
-            NSString *itemPrice = [dict objectForKey:@"price"];
-            NSString *itemUrl = [dict objectForKey:@"url"];
-            NSString *itemAct = [dict objectForKey:@"act"];
-            NSString *itemId = [dict objectForKey:@"ID"];
-            NSString *itemImage2 = [dict objectForKey:@"img2"];
-            
-            NSLog(@"%@", itemName);
-            
-            STModelItem *item = [[STModelItem alloc] init];
-            item.itemName = itemName;
-            item.itemFavs = itemFavs;
-            item.itemPreviewUrl = itemPreviewUrl;
-            item.itemPrice = itemPrice;
-            item.itemUrl = itemUrl;
-            item.itemAct = itemAct;
-            item.itemId = itemId;
-            item.itemImage2 = itemImage2;
-            
-            [results addObject:item];
-        }
-    });
+        NSLog(@"%@", itemName);
+        
+        STModelItem *item = [[STModelItem alloc] init];
+        item.itemName = itemName;
+        item.itemFavs = itemFavs;
+        item.itemPreviewUrl = itemPreviewUrl;
+        item.itemPrice = itemPrice;
+        item.itemUrl = itemUrl;
+        item.itemAct = itemAct;
+        item.itemId = itemId;
+        item.itemImage2 = itemImage2;
+        
+        [results addObject:item];
+    }
     if (results.count != 0)
         return results;
 
