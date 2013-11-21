@@ -80,6 +80,8 @@
                 [results addObjectsFromArray:list];
             }
         }
+        [_originRelatesArray removeAllObjects];
+        [_originRelatesArray addObjectsFromArray:results];
         /*存本地*/
         /*删除原来的数据*/
         NSUserDefaults *userDefautls = [NSUserDefaults standardUserDefaults];
@@ -214,6 +216,11 @@
         }
     }
     return NO;
+}
+
+- (void)sortItemsByRelates
+{
+    
 }
 
 - (void)sortItemsByPrice

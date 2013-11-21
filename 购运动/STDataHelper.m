@@ -28,6 +28,8 @@
         _homeFetchNetworkDataBlockOperation = nil;
         _searchFetchNetworkDataBlockOperation = nil;
         _homeLoadCategoryDetailsBlockOperation = nil;
+        
+        _originRelatesArray = [[NSMutableArray alloc] init];
     }
     return self;
 }

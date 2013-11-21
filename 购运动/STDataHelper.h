@@ -15,6 +15,8 @@
     NSBlockOperation *_homeFetchNetworkDataBlockOperation;
     NSBlockOperation *_searchFetchNetworkDataBlockOperation;
     NSBlockOperation *_homeLoadCategoryDetailsBlockOperation;
+    
+    NSMutableArray *_originRelatesArray;
 }
 + (id)sharedInstance;
 @end
