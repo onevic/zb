@@ -181,6 +181,13 @@
             break;
         }
     }
+    if (seletedCategory == Nil)
+    {
+        
+        seletedCategory = [[STModelCategory alloc] init];
+        seletedCategory.categoryName = touchName;
+    }
+    
     CategoryDetailViewController *cateDetails = [[CategoryDetailViewController alloc] init];
     cateDetails.cate = seletedCategory;
     [self.navigationController pushViewController:cateDetails animated:YES];

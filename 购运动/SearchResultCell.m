@@ -22,9 +22,9 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 80, 80)];
-        [self.contentView addSubview:_imageView];
-        _imageView.backgroundColor = [UIColor grayColor];
+        _mImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 80, 80)];
+        [self.contentView addSubview:_mImageView];
+        _mImageView.backgroundColor = [UIColor grayColor];
         
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(110, 20, 190, 45)];
         _titleLabel.textColor = [UIColor darkGrayColor];
@@ -55,7 +55,7 @@
 {
     self.item = item;
     
-    [_imageView setImageWithURL:[NSURL URLWithString:item.itemImage2]];
+    [_mImageView setImageWithURL:[NSURL URLWithString:item.itemImage2]];
     _titleLabel.text = item.itemName;
     _priceLabel.text = item.itemPrice;
 }

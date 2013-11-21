@@ -11,7 +11,7 @@
 @class STModelItem;
 @interface SearchResultCell : UITableViewCell
 
-@property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) UIImageView *mImageView;
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *priceLabel;
 @property (strong, nonatomic) UIButton *payBtn;

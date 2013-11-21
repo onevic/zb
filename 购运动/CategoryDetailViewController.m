@@ -27,9 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self createUI];
 
     _allItems = [[NSMutableArray alloc] init];
-    _btnArray = [[NSMutableArray alloc] initWithCapacity:4];
+    self.cate = [[STModelCategory alloc] init];
+    
     /*加载数据*/
     [[STDataHelper sharedInstance] homeLoadCategoryDetail:_cate];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailCompleted) name:kNotifyHomeLoadCategoryDetailCompleted object:nil];
@@ -38,8 +41,6 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailCompleted) name:kNotifySortCompleted object:Nil];
     
-    _tableView = [[UITableView alloc] init];
-    [self createUI];
 }
 
 - (void)backButtonClicked
@@ -67,7 +68,10 @@
     _topImageView= [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 43)];
     _topImageView.image = [UIImage imageNamed:@"相关.png"];
     [topView addSubview:_topImageView];
-
+    
+    
+    _btnArray = [[NSMutableArray alloc] initWithCapacity:4];
+    
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn1.tag = 101;
     btn1.frame = CGRectMake(13, 11.5, 54, 19.5);
@@ -105,7 +109,8 @@
     [topView addSubview:btn4];
     [_btnArray addObject:btn4];
     
-    _tableView.frame = CGRectMake(0, 43, kScreenWidth, kScreenHeight-87-20);
+    
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 43, kScreenWidth, kScreenHeight-87-20) style:UITableViewStylePlain];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.delegate = self;
     _tableView.dataSource = self;

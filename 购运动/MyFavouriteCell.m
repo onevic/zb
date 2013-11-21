@@ -16,6 +16,9 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        self.item1 = [[STModelItem alloc] init];
+        self.item2 = [[STModelItem alloc] init];
+        
         // Initialization code
         _imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(15, 15, 140, 140)];
         _imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(25+140, 15, 140, 140)];

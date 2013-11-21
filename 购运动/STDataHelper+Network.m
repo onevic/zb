@@ -63,6 +63,7 @@
  */
 - (void)homeLoadCategoryDetail:(STModelCategory *)cate
 {
+    [self homeLoadCategoryDetailCancel];
     
     _homeLoadCategoryDetailsBlockOperation = [NSBlockOperation blockOperationWithBlock:^{
         NSMutableArray *results = [[NSMutableArray alloc] init];
