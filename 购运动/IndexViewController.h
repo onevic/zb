@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "STBaseViewController.h"
 
-@interface IndexViewController : UIViewController
+@interface IndexViewController : STBaseViewController
 {
     NSMutableArray *_catesArray; //分类数组
 }

@@ -20,7 +20,6 @@
 
 @implementation IndexViewController {
     LeftViewController *_left;
-    UIView *_bgView;
     NSMutableArray *_cateImageArray;
 }
 
@@ -55,24 +54,11 @@
 - (void)createUI
 {
     // 容器北京，贴在self.view上，其他控件贴在_bgView上
-    _bgView = [[UIView alloc] init];
-    _bgView.userInteractionEnabled = YES;
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
-        _bgView.frame = CGRectMake(0, self.view.frame.origin.y+20, 320, self.view.frame.size.height+20);
-    } else {
-        _bgView.frame = CGRectMake(0, self.view.frame.origin.y-20, 320, self.view.frame.size.height);
-    }
-    [self.view addSubview:_bgView];
-    UIImageView *bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, _bgView.frame.size.height)];
-    [_bgView addSubview:bgImageView];
-    UIImageView *navImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-    navImageView.image = [UIImage imageNamed:@"nav_bg.png"];
-    [_bgView addSubview:navImageView];
-    UIButton *navButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    navButton.frame = CGRectMake(20, 15, 18.5, 13);
-    [navButton setImage:[UIImage imageNamed:@"nav_menu.png"] forState:UIControlStateNormal];
-    [navButton addTarget:self action:@selector(showMenu) forControlEvents:UIControlEventTouchUpInside];
-    [_bgView addSubview:navButton];
+    
+    UIImageView *bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-64)];
+    [self.view addSubview:bgImageView];
+
+    [self addMenuButton];
     
     // 标题
     _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(120, 13, 80, 18)];
@@ -80,22 +66,16 @@
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.font = [UIFont boldSystemFontOfSize:18];
     _titleLabel.textColor = [UIColor whiteColor];
-    [_bgView addSubview:_titleLabel];
+    [self.navBar addSubview:_titleLabel];
 }
 
-// 显示左侧菜单
-- (void)showMenu
-{
-    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-    [appDelegate.ddmenu showLeftController:YES];
-}
 
 // 添加首页八个模块
 - (void)addScrollView
 {
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 44, 320, _bgView.frame.size.height-44-40)];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-64)];
     scrollView.contentSize = CGSizeMake(320, 25+126.5*2+274*2);
-    [_bgView addSubview:scrollView];
+    [self.view addSubview:scrollView];
     scrollView.userInteractionEnabled = YES;
     
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
