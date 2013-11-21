@@ -14,6 +14,7 @@
 #import "STSearchViewController.h"
 #import "STBaseNavigationController.h"
 #import "CenterViewController.h"
+#import "MyFavouriteViewController.h"
 
 @interface LeftViewController ()
 
@@ -115,6 +116,13 @@
         STSearchViewController *search = [[STSearchViewController alloc] init];
         STBaseNavigationController *nav = [[STBaseNavigationController alloc] initWithRootViewController:search  ];
         
+        AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+        [appDelegate.ddmenu setRootController:nav animated:YES];
+    }
+    
+    if (indexPath.row == 2) {
+        MyFavouriteViewController *favourite = [[MyFavouriteViewController alloc] init];
+        STBaseNavigationController *nav = [[STBaseNavigationController alloc] initWithRootViewController:favourite];
         AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
         [appDelegate.ddmenu setRootController:nav animated:YES];
     }

@@ -22,6 +22,8 @@
 		7231BE1F183CD139003918E5 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7231BE1E183CD139003918E5 /* CenterViewController.m */; };
 		72532654183B826000212F82 /* CategoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72532653183B826000212F82 /* CategoryDetailViewController.m */; };
 		7265041F183A581E00282738 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265041E183A581D00282738 /* MenuCell.m */; };
+		72791A35183D96D100B616E2 /* MyFavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72791A34183D96D100B616E2 /* MyFavouriteViewController.m */; };
+		72791A38183D96E500B616E2 /* MyFavouriteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72791A37183D96E500B616E2 /* MyFavouriteCell.m */; };
 		72D520A2183A22E80095AC82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D520A1183A22E80095AC82 /* UIKit.framework */; };
 		72D520A4183A22E80095AC82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D520A3183A22E80095AC82 /* Foundation.framework */; };
 		72D520A6183A22E80095AC82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D520A5183A22E80095AC82 /* CoreGraphics.framework */; };
@@ -159,6 +161,10 @@
 		72532653183B826000212F82 /* CategoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryDetailViewController.m; sourceTree = "<group>"; };
 		7265041D183A581D00282738 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
 		7265041E183A581D00282738 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		72791A33183D96D100B616E2 /* MyFavouriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavouriteViewController.h; sourceTree = "<group>"; };
+		72791A34183D96D100B616E2 /* MyFavouriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavouriteViewController.m; sourceTree = "<group>"; };
+		72791A36183D96E500B616E2 /* MyFavouriteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavouriteCell.h; sourceTree = "<group>"; };
+		72791A37183D96E500B616E2 /* MyFavouriteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavouriteCell.m; sourceTree = "<group>"; };
 		72D5209E183A22E80095AC82 /* SportShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D520A1183A22E80095AC82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		72D520A3183A22E80095AC82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -329,6 +335,17 @@
 			name = Center;
 			sourceTree = "<group>";
 		};
+		72791A32183D96B900B616E2 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				72791A33183D96D100B616E2 /* MyFavouriteViewController.h */,
+				72791A34183D96D100B616E2 /* MyFavouriteViewController.m */,
+				72791A36183D96E500B616E2 /* MyFavouriteCell.h */,
+				72791A37183D96E500B616E2 /* MyFavouriteCell.m */,
+			);
+			name = Favourite;
+			sourceTree = "<group>";
+		};
 		72D52095183A22E80095AC82 = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +378,7 @@
 		72D520A7183A22E80095AC82 /* SportShopping */ = {
 			isa = PBXGroup;
 			children = (
+				72791A32183D96B900B616E2 /* Favourite */,
 				72D520BE183A25980095AC82 /* Images */,
 				72D520B0183A22E80095AC82 /* AppDelegate.h */,
 				72D520B1183A22E80095AC82 /* AppDelegate.m */,
@@ -882,11 +900,13 @@
 				7231BE0B183CA790003918E5 /* SearchResultCell.m in Sources */,
 				D21CBBB8183C607700A1B88D /* SDWebImageManager.m in Sources */,
 				D29CBA5B183B7EFB0035DCC2 /* STModelItem.m in Sources */,
+				72791A35183D96D100B616E2 /* MyFavouriteViewController.m in Sources */,
 				D29CBA53183B6DE90035DCC2 /* STDataHelper+Network.m in Sources */,
 				D29CBA58183B7B690035DCC2 /* STModelCategory.m in Sources */,
 				7231BE1F183CD139003918E5 /* CenterViewController.m in Sources */,
 				D29CBA4E183B65640035DCC2 /* FMDatabasePool.m in Sources */,
 				72D5216D183A261C0095AC82 /* IndexViewController.m in Sources */,
+				72791A38183D96E500B616E2 /* MyFavouriteCell.m in Sources */,
 				D21CBBB5183C607700A1B88D /* SDImageCache.m in Sources */,
 				D2506784183CC16A00E57393 /* NSString+URLEncoding.m in Sources */,
 				D21CBBB9183C607700A1B88D /* SDWebImagePrefetcher.m in Sources */,
