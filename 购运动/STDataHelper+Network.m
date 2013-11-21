@@ -227,44 +227,59 @@
 {
     /*从低到高*/
     NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableArray *itemsArray = [userdefaults objectForKey:@"Item"];
+    NSMutableArray *itemsArray = [[userdefaults objectForKey:@"Item"] mutableCopy];
     for (int i=0;i<=itemsArray.count-1;i++)
     {
         BOOL isOk = YES;
         for (int j=itemsArray.count-1;j>=i+1;j--)
         {
-            STModelItem *item0 = [itemsArray objectAtIndex:j-1];
-            STModelItem *item1 = [itemsArray objectAtIndex:j];
-            if (item0.itemPrice.floatValue > item1.itemPrice.floatValue)
+            NSDictionary *item0 = [itemsArray objectAtIndex:j-1];
+            NSDictionary *item1 = [itemsArray objectAtIndex:j];
+            float price0 = [[item0 objectForKey:@"price"] floatValue];
+            float price1 = [[item1 objectForKey:@"price"] floatValue];
+            if (price0 > price1)
             {
-                [itemsArray exchangeObjectAtIndex:i withObjectAtIndex:j];
+                [itemsArray exchangeObjectAtIndex:j-1 withObjectAtIndex:j];
                 isOk = NO;
             }
         }
         if (isOk) break;
     }
+    [userdefaults setObject:itemsArray forKey:@"Item"];
+    [userdefaults synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNotifySortCompleted object:Nil];
 }
 
 - (void)sortItemsBySold
 {
     /*从高到低*/
     NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableArray *itemsArray = [userdefaults objectForKey:@"Item"];
+    NSMutableArray *itemsArray = [[userdefaults objectForKey:@"Item"] mutableCopy];
     for (int i=0;i<=itemsArray.count-1;i++)
     {
         BOOL isOk = YES;
         for (int j=itemsArray.count-1;j>=i+1;j--)
         {
-            STModelItem *item0 = [itemsArray objectAtIndex:j-1];
-            STModelItem *item1 = [itemsArray objectAtIndex:j];
-            if (item0.itemAct.floatValue < item1.itemAct.floatValue)
+            NSDictionary *item0 = [itemsArray objectAtIndex:j-1];
+            NSDictionary *item1 = [itemsArray objectAtIndex:j];
+            NSString *act0str = [[item0 objectForKey:@"act"] substringFromIndex:2];
+            NSString *act1str = [[item1 objectForKey:@"act"] substringFromIndex:2];
+            
+            float act0 = [act0str floatValue];
+            float act1 = [act1str floatValue];
+            if (act0 < act1)
             {
-                [itemsArray exchangeObjectAtIndex:i withObjectAtIndex:j];
+                [itemsArray exchangeObjectAtIndex:j-1 withObjectAtIndex:j];
                 isOk = NO;
             }
         }
         if (isOk) break;
     }
+    [userdefaults setObject:itemsArray forKey:@"Item"];
+    [userdefaults synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNotifySortCompleted object:Nil];
 }
 
 - (void)sortItemsByRenQi

@@ -35,6 +35,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailCompleted) name:kNotifyHomeLoadCategoryDetailCompleted object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailFailed) name:kNotifyHomeLoadCategoryDetailFailed object:nil];
     
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadCategoryDetailCompleted) name:kNotifySortCompleted object:Nil];
+    
     _tableView = [[UITableView alloc] init];
     [self createUI];
 }
@@ -114,6 +117,7 @@
 
 - (void)btnClick:(UIButton *)btn
 {
+    
     int selected = btn.tag - 100 - 1;
     NSArray *namesArray = @[@"相关", @"价格", @"销量", @"人气"];
     btn.selected = YES;
@@ -123,6 +127,33 @@
             button.selected = NO;
         }
     }
+    
+    if (_allItems.count == 0)
+    {
+        return;
+    }
+    
+    if (selected == 0)
+    {
+        //相关
+        
+        
+    }else if (selected == 1)
+    {
+        //价格
+        [[STDataHelper sharedInstance] sortItemsByPrice];
+
+        
+    }else if (selected == 2)
+    {
+        //销量
+        [[STDataHelper sharedInstance] sortItemsBySold];
+
+        
+    }else {
+        //人气
+        
+    }
 }
 
 
@@ -130,6 +161,8 @@
 #pragma mark - 下载回调
 - (void)loadCategoryDetailCompleted
 {
+    [_allItems removeAllObjects];
+
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         /*拿到所有商品的数组*/
         NSMutableArray *results = [[NSMutableArray alloc] init];
@@ -145,8 +178,6 @@
             NSString *itemId = [dict objectForKey:@"ID"];
             NSString *itemImage2 = [dict objectForKey:@"img2"];
             
-            NSLog(@"%@", itemName);
-            
             STModelItem *item = [[STModelItem alloc] init];
             item.itemName = itemName;
             item.itemFavs = itemFavs;
@@ -160,11 +191,12 @@
             [results addObject:item];
         }
         [_allItems addObjectsFromArray:results];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             [_tableView reloadData];
         });
     });
-    
+
 }
 
 - (void)loadCategoryDetailFailed

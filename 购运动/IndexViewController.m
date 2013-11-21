@@ -58,10 +58,8 @@
     _bgView = [[UIView alloc] init];
     _bgView.userInteractionEnabled = YES;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
-        NSLog(@"这个是iOS7的模拟器");
         _bgView.frame = CGRectMake(0, self.view.frame.origin.y+20, 320, self.view.frame.size.height+20);
     } else {
-        NSLog(@"这个是iOS7以下版本的模拟器");
         _bgView.frame = CGRectMake(0, self.view.frame.origin.y-20, 320, self.view.frame.size.height);
     }
     [self.view addSubview:_bgView];
@@ -203,7 +201,6 @@
             break;
         }
     }
-    NSLog(@"touchName:%@", seletedCategory.categoryName);
     CategoryDetailViewController *cateDetails = [[CategoryDetailViewController alloc] init];
     cateDetails.cate = seletedCategory;
     [self.navigationController pushViewController:cateDetails animated:YES];

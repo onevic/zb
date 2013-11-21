@@ -63,9 +63,7 @@
             NSString *itemAct = [dict objectForKey:@"act"];
             NSString *itemId = [dict objectForKey:@"ID"];
             NSString *itemImage2 = [dict objectForKey:@"img2"];
-            
-            NSLog(@"%@", itemName);
-            
+                    
             STModelItem *item = [[STModelItem alloc] init];
             item.itemName = itemName;
             item.itemFavs = itemFavs;

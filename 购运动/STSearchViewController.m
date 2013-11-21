@@ -57,7 +57,6 @@
 - (void)goSearch
 {
     [_searchTextField resignFirstResponder];
-    NSLog(@"%@", _searchTextField.text);
     if (_searchTextField.text == Nil || [_searchTextField.text isEqualToString:@""])
     {
         return;

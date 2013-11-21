@@ -37,17 +37,16 @@
     [_navBar addSubview:titleLabel];
     
     
-        _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-64)];
-        [self.view addSubview:_webView];
-        
-        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://zhekou.yijia.com/jkjby/view/set.php?app_id=7&app_oid=5ffd6ba76f590533ae89994a2a1099b3c25e3a38&app_version=2.6&app_channel=appstore&sche=jkjby"]];
-        [_webView loadRequest:urlRequest];
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-64)];
+    [self.view addSubview:_webView];
+    
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://zhekou.yijia.com/jkjby/view/set.php?app_id=7&app_oid=5ffd6ba76f590533ae89994a2a1099b3c25e3a38&app_version=2.6&app_channel=appstore&sche=jkjby"]];
+    [_webView loadRequest:urlRequest];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSLog(@"y:%f", _webView.frame.origin.y);
 }
 
 
